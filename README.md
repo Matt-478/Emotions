@@ -7,5 +7,5 @@ This will be a purely visual page to showcase my styling abilities and experimen
 - Eleemnts that interact with the user
 - Elements that interact with each other (f.i. when they are "stacked" in layers)
 
-👷  The project is expected to take a minimum of 2 weeks and will possibly use a CSS pre-processor like LESS or SASS.
+👷  The project is expected to take a minimum of 2 weeks and will possibly use a CSS pre-processor like LESS or SASS.  
 ⛔️  The project will not use any frameworks like Bootstrap or Tailwind.
