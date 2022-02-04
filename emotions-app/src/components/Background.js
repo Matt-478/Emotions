@@ -1,18 +1,10 @@
-import './App.css';
-import React from 'react'
-import Boops from './components/Boops'
-import Background from './components/Background'
-
 import ScrollingColorBackground from 'react-scrolling-color-background'
+import React from 'react'
+import chroma from "chroma-js";
 
-function App() {
+function Background() {
   return (
     <>
-      <p>
-        All the basic emotions...
-      </p>
-      {/* <Background /> */}
-      <Boops />
       <ScrollingColorBackground
         selector='.js-color-stop[data-background-color]'
         colorDataAttribute='data-background-color'
@@ -32,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default Background;
