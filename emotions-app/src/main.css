@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: cornflowerblue;
+}
+
 main section {
   height: 100vh;
   display: -webkit-box;
@@ -14,4 +27,4 @@ main section {
 main section h1 {
   font-size: 3em;
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=main.css.map */

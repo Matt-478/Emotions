@@ -1,4 +1,4 @@
-import './App.css';
+import './main.css'
 import React, { useRef, useEffect } from 'react'
 
 import { data } from './data'
