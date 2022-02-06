@@ -1,27 +1,36 @@
 import './App.css';
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
+
+import { data } from './data'
 
 function App() {
+  const GroupRef = useRef([])
+
+  const bgChange = (el) => {
+    const styles = GroupRef.current.map((group, i) => {
+      const rect = group.getBoundingClientRect()
+
+      return { group, rect }
+    }).find((group) => group.rect.bottom >= window.innerHeight * 0.5)
+
+    document.body.style.backgroundColor = `${styles.group.dataset.bgcolor}`
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', bgChange)
+  }, [])
+
   return (
     <>
       <main>
-        <section className="intro">
-        <p>...all the basic emotionS</p>
-          <h3>Welcome to Emotions</h3>
-          <p>All the basic emotions...</p>
-        </section>
-
-        <section className="Anger">
-          <h3>Anger</h3>
-        </section>
-
-        <section className="Enjoyment">
-          <h3>Enjoyment</h3>
-        </section>
-
-        <section className="Fear">
-          <h3>Fear</h3>
-        </section>
+        {data.map((group, i) => (
+          <section 
+            ref={(el) => (GroupRef.current[i] = el)}
+            data-bgcolor={group.background}
+          >
+            <h1>{group.title}</h1>
+          </section>
+        ))}
       </main>
     </>
   );

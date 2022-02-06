@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  transition: all 0.5s ease;
+}
+
 main section { 
   height: 100vh;
   display: flex;
@@ -15,18 +19,6 @@ main section h3 {
   font-size: 3em;
 }
 
-main .intro {
+.intro {
   background-color: cornflowerblue;
-}
-
-main .Anger {
-  background-color: rgb(209, 85, 47);
-}
-
-main .Enjoyment {
-  background-color: rgb(230, 210, 99);
-}
-
-main .Fear {
-  background-color: rgb(112, 122, 139);
 }
