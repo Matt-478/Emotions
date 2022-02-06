@@ -19,14 +19,14 @@ main .intro {
   background-color: cornflowerblue;
 }
 
-main .emotion_1 {
+main .Anger {
   background-color: rgb(209, 85, 47);
 }
 
-main .emotion_2 {
+main .Enjoyment {
   background-color: rgb(230, 210, 99);
 }
 
-main .emotion_3 {
+main .Fear {
   background-color: rgb(112, 122, 139);
 }

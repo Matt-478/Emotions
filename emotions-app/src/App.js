@@ -6,19 +6,20 @@ function App() {
     <>
       <main>
         <section className="intro">
+        <p>...all the basic emotionS</p>
           <h3>Welcome to Emotions</h3>
           <p>All the basic emotions...</p>
         </section>
 
-        <section className="emotion_1">
+        <section className="Anger">
           <h3>Anger</h3>
         </section>
 
-        <section className="emotion_2">
+        <section className="Enjoyment">
           <h3>Enjoyment</h3>
         </section>
 
-        <section className="emotion_3">
+        <section className="Fear">
           <h3>Fear</h3>
         </section>
       </main>
