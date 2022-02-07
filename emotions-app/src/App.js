@@ -32,6 +32,24 @@ function App() {
           </section>
         ))}
       </main>
+
+      {/* <main>
+        <section>
+          <h2>
+            Page one
+          </h2>
+        </section>
+        <section>
+          <h2>
+            Page two
+          </h2>
+        </section>
+        <section>
+          <h2>
+            Page three
+          </h2>
+        </section>
+      </main> */}
     </>
   );
 }
