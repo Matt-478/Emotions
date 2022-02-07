@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      {/* <main>
+      <main>
         {data.map((group, i) => (
           <section 
             ref={(el) => (GroupRef.current[i] = el)}
@@ -31,24 +31,6 @@ function App() {
             <h1>{group.title}</h1>
           </section>
         ))}
-      </main> */}
-
-      <main>
-        <section>
-          <h2>
-            Page one
-          </h2>
-        </section>
-        <section>
-          <h2>
-            Page two
-          </h2>
-        </section>
-        <section>
-          <h2>
-            Page three
-          </h2>
-        </section>
       </main>
     </>
   );
