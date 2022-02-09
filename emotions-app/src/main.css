@@ -56,5 +56,6 @@ body main section .angerFontToChange:hover {
   font-family: Aarcover;
   font-size: 8em;
   font-variant-caps: all-small-caps;
+  cursor: default;
 }
 /*# sourceMappingURL=main.css.map */
