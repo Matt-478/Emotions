@@ -2,6 +2,13 @@
   // meant for all h1, h2, h3 tags
 $headlineSize: 6em
 
+// MIXINS
+  @mixin forFontToChange($emotionFontFamily)
+    font-family: $emotionFontFamily
+    font-size: $headlineSize +2em
+    cursor: default
+    
+
 * 
   margin: 0
   padding: 0
@@ -17,10 +24,17 @@ body
   overflow-y: scroll
   scroll-behavior: smooth
 
+  // ANGER
   @font-face 
     font-family: Aarcover
     src: url("./fonts/AarcoverRegular-ZV9l.ttf")
     font-style: normal
+  
+  // FEAR
+  @font-face 
+    font-family: Tupo Vyaz
+    src: url("./fonts/Tupo-Vyaz/Tupo-Vyaz_Thin.ttf")
+    font-style: thin
     
   h1, h2, h3 
     font-family: 'Hind', sans-serif
@@ -40,9 +54,9 @@ body
       scroll-snap-align: start
 
       .angerFontToChange:hover
-        font-family: Aarcover
-        font-size: $headlineSize +2em
+        @include forFontToChange(Aarcover)
         font-variant-caps: all-small-caps //w/o  this property font changes only for the first letter of each word
         // transition: all 1.5s ease
-        cursor: default
 
+      .fearFontToChange:hover
+        @include forFontToChange(Tupo Vyaz)
