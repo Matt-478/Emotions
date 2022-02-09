@@ -8,9 +8,9 @@ function App() {
 
   const bgChange = (el) => {
     const styles = GroupRef.current.map((group, i) => {
-      const rect = group.getBoundingClientRect()
+    const rect = group.getBoundingClientRect()
 
-      return { group, rect }
+    return { group, rect }
     }).find((group) => group.rect.bottom >= window.innerHeight * 0.5)
 
     document.body.style.backgroundColor = `${styles.group.dataset.bgcolor}`
@@ -27,8 +27,11 @@ function App() {
           <section 
             ref={(el) => (GroupRef.current[i] = el)}
             data-bgcolor={group.background}
+            
           >
-            <h1>{group.title}</h1>
+            <h1 
+            className="fontToChange"
+            >{group.title}</h1>
           </section>
         ))}
       </main>

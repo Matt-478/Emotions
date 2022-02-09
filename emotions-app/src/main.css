@@ -43,4 +43,8 @@ body main section {
           align-items: center;
   scroll-snap-align: start;
 }
+
+body main section .fontToChange:hover {
+  font-weight: 300;
+}
 /*# sourceMappingURL=main.css.map */
