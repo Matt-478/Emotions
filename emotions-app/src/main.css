@@ -34,6 +34,14 @@ body {
   }
 }
 
+@font-face {
+  body {
+    font-family: Rof Top Simple;
+    src: url("./fonts/RofTopSimpleRegular-r4M7.ttf");
+    font-style: normal;
+  }
+}
+
 body h1, body h2, body h3 {
   font-family: 'Hind', sans-serif;
   font-weight: 700;
@@ -63,12 +71,18 @@ body main section {
 body main section .angerFontToChange:hover {
   font-family: Aarcover;
   font-size: 8em;
-  font-variant-caps: all-small-caps;
   cursor: default;
+  font-variant-caps: all-small-caps;
 }
 
 body main section .fearFontToChange:hover {
   font-family: Tupo Vyaz;
+  font-size: 8em;
+  cursor: default;
+}
+
+body main section .sadnessFontToChange:hover {
+  font-family: Rof Top Simple;
   font-size: 8em;
   cursor: default;
 }

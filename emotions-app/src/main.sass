@@ -2,12 +2,6 @@
   // meant for all h1, h2, h3 tags
 $headlineSize: 6em
 
-// MIXINS
-  @mixin forFontToChange($emotionFontFamily)
-    font-family: $emotionFontFamily
-    font-size: $headlineSize +2em
-    cursor: default
-    
 
 * 
   margin: 0
@@ -24,6 +18,15 @@ body
   overflow-y: scroll
   scroll-behavior: smooth
 
+
+  // MIXINS
+  @mixin forFontToChange($emotionFontFamily)
+    font-family: $emotionFontFamily
+    font-size: $headlineSize +2em
+    cursor: default
+
+
+
   // ANGER
   @font-face 
     font-family: Aarcover
@@ -36,7 +39,14 @@ body
     src: url("./fonts/Tupo-Vyaz/Tupo-Vyaz_Thin.ttf")
     font-style: thin
     
+  // SADNESS
+  @font-face 
+    font-family: Rof Top Simple
+    src: url("./fonts/RofTopSimpleRegular-r4M7.ttf")
+    font-style: normal
+
   h1, h2, h3 
+    // font-family: Rof Top Simple
     font-family: 'Hind', sans-serif
     font-weight: 700
     font-size: $headlineSize
@@ -60,3 +70,6 @@ body
 
       .fearFontToChange:hover
         @include forFontToChange(Tupo Vyaz)
+
+      .sadnessFontToChange:hover
+        @include forFontToChange(Rof Top Simple)

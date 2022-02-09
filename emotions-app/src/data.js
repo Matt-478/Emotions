@@ -12,7 +12,7 @@ export const data = [
   {
     title: "Sadness",
     background: "rgb(230, 210, 99)",
-    classNameForFontChange: ""
+    classNameForFontChange: "sadnessFontToChange"
   },
   {
     title: "Surprise",
