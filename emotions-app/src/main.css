@@ -18,10 +18,18 @@ body {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  body {
+    font-family: Aarcover;
+    src: url("./fonts/AarcoverRegular-ZV9l.ttf");
+    font-style: normal;
+    font-variant-caps: petite-caps;
+  }
+}
+
 body h1, body h2, body h3 {
-  font-family: 'Hind', sans-serif;
-  font-weight: 700;
-  font-size: 3.8em;
+  font-family: Aarcover;
+  font-size: 6em;
 }
 
 body main {
@@ -42,9 +50,5 @@ body main section {
       -ms-flex-align: center;
           align-items: center;
   scroll-snap-align: start;
-}
-
-body main section .fontToChange:hover {
-  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
