@@ -13,11 +13,14 @@ body
   overflow-y: scroll
   scroll-behavior: smooth
 
-  main
+  h1, h2, h3 
+    font-family: 'Hind', sans-serif
+    font-weight: 700
+    font-size: 3.8em
+
+  main 
     height: 100%
     width: 100%
-    // scroll-snap-type: y mandatory
-    // overflow-y: scroll
 
     section 
       height: 100vh
@@ -26,17 +29,3 @@ body
       justify-content: center
       align-items: center
       scroll-snap-align: start
-      // scroll-snap-points-x: repeat(100vh)
-
-      // &:nth-of-type(1)
-      // these had colors before
-      // scroll-snap-align: start
-
-      // &:nth-of-type(2)
-      //   scroll-snap-align: start
-
-      // &:nth-of-type(3)
-      //   scroll-snap-align: start
-
-      h1, h2
-        font-size: 3em

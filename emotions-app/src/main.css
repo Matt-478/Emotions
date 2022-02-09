@@ -18,6 +18,12 @@ body {
   scroll-behavior: smooth;
 }
 
+body h1, body h2, body h3 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  font-size: 3.8em;
+}
+
 body main {
   height: 100%;
   width: 100%;
@@ -36,9 +42,5 @@ body main section {
       -ms-flex-align: center;
           align-items: center;
   scroll-snap-align: start;
-}
-
-body main section h1, body main section h2 {
-  font-size: 3em;
 }
 /*# sourceMappingURL=main.css.map */
