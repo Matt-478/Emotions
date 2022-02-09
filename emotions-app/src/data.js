@@ -20,11 +20,6 @@ export const data = [
     classNameForFontChange: "angerFontToChange"
   },
   {
-    title: "Rejection",
-    background: "rgb(230, 210, 99)",
-    classNameForFontChange: ""
-  },
-  {
     title: "Enjoyment",
     background: "rgb(230, 210, 99)",
     classNameForFontChange: ""
