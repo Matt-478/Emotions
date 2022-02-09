@@ -29,7 +29,7 @@ body {
 body h1, body h2, body h3 {
   font-family: 'Hind', sans-serif;
   font-weight: 700;
-  font-size: headlineSize;
+  font-size: 6em;
 }
 
 body main {
@@ -54,9 +54,7 @@ body main section {
 
 body main section .angerFontToChange:hover {
   font-family: Aarcover;
-  font-size: headlineSize;
+  font-size: 8em;
   font-variant-caps: all-small-caps;
-  -webkit-transition: hover 1s 0.3s ease;
-  transition: hover 1s 0.3s ease;
 }
 /*# sourceMappingURL=main.css.map */
