@@ -23,13 +23,13 @@ body {
     font-family: Aarcover;
     src: url("./fonts/AarcoverRegular-ZV9l.ttf");
     font-style: normal;
-    font-variant-caps: petite-caps;
   }
 }
 
 body h1, body h2, body h3 {
-  font-family: Aarcover;
-  font-size: 6em;
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  font-size: headlineSize;
 }
 
 body main {
@@ -50,5 +50,13 @@ body main section {
       -ms-flex-align: center;
           align-items: center;
   scroll-snap-align: start;
+}
+
+body main section .angerFontToChange:hover {
+  font-family: Aarcover;
+  font-size: headlineSize;
+  font-variant-caps: all-small-caps;
+  -webkit-transition: hover 1s 0.3s ease;
+  transition: hover 1s 0.3s ease;
 }
 /*# sourceMappingURL=main.css.map */

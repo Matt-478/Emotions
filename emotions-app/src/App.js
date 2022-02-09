@@ -27,10 +27,9 @@ function App() {
           <section 
             ref={(el) => (GroupRef.current[i] = el)}
             data-bgcolor={group.background}
-            
           >
             <h1 
-            className="fontToChange"
+            className={group.classNameForFontChange}
             >{group.title}</h1>
           </section>
         ))}

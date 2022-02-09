@@ -1,3 +1,7 @@
+// GLOBAL VARIABLES
+  // meant for all h1, h2, h3 tags
+  $headlineSize: 6em
+
 * 
   margin: 0
   padding: 0
@@ -17,13 +21,11 @@ body
     font-family: Aarcover
     src: url("./fonts/AarcoverRegular-ZV9l.ttf")
     font-style: normal
-    font-variant-caps: petite-caps;
 
   h1, h2, h3 
-    font-family: Aarcover
-    font-size: 6em
-    // font-family: 'Hind', sans-serif
-    // font-weight: 700
+    font-family: 'Hind', sans-serif
+    font-weight: 700
+    font-size: $headlineSize
 
   main 
     height: 100%
@@ -37,8 +39,9 @@ body
       align-items: center
       scroll-snap-align: start
 
-      // .fontToChange:hover
-        // font-weight: 300
-        // font-family: 
-        // font-family: NewAnger
+      .angerFontToChange:hover
+        font-family: Aarcover
+        font-size: $headlineSize
+        font-variant-caps: all-small-caps //w/o  this property font changes only for the first letter of each word
+        transition: hover 1s 0.3s ease
 
