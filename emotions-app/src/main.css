@@ -42,6 +42,22 @@ body {
   }
 }
 
+@font-face {
+  body {
+    font-family: JaneAusten;
+    src: url("./fonts/Janeausten-rpRp.ttf");
+    font-style: normal;
+  }
+}
+
+@font-face {
+  body {
+    font-family: Fresnel;
+    src: url("./fonts/Fresnel-DO9E.ttf");
+    font-style: normal;
+  }
+}
+
 body h1, body h2, body h3 {
   font-family: 'Hind', sans-serif;
   font-weight: 700;
@@ -85,5 +101,18 @@ body main section .sadnessFontToChange:hover {
   font-family: Rof Top Simple;
   font-size: 8em;
   cursor: default;
+}
+
+body main section .enjoymentFontToChange:hover {
+  font-family: JaneAusten;
+  font-size: 8em;
+  cursor: default;
+}
+
+body main section .surpriseFontToChange:hover {
+  font-family: Fresnel;
+  font-size: 8em;
+  cursor: default;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */

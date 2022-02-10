@@ -17,12 +17,12 @@ export const data = [
   {
     title: "Surprise",
     background: "rgb(209, 85, 47)",
-    classNameForFontChange: "angerFontToChange"
+    classNameForFontChange: "surpriseFontToChange"
   },
   {
     title: "Enjoyment",
     background: "rgb(230, 210, 99)",
-    classNameForFontChange: ""
+    classNameForFontChange: "enjoymentFontToChange"
   },
   {
     title: "Fear",

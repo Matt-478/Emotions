@@ -22,7 +22,7 @@ body
   // MIXINS
   @mixin forFontToChange($emotionFontFamily)
     font-family: $emotionFontFamily
-    font-size: $headlineSize +2em
+    font-size: $headlineSize + 2em
     cursor: default
 
 
@@ -45,8 +45,20 @@ body
     src: url("./fonts/RofTopSimpleRegular-r4M7.ttf")
     font-style: normal
 
+  // ENJOYMENT
+  @font-face 
+    font-family: JaneAusten
+    src: url("./fonts/Janeausten-rpRp.ttf")
+    font-style: normal
+
+  // SURPRISE
+  @font-face 
+    font-family: Fresnel
+    src: url("./fonts/Fresnel-DO9E.ttf")
+    font-style: normal
+
   h1, h2, h3 
-    // font-family: Rof Top Simple
+    // font-family: Fresnel
     font-family: 'Hind', sans-serif
     font-weight: 700
     font-size: $headlineSize
@@ -73,3 +85,10 @@ body
 
       .sadnessFontToChange:hover
         @include forFontToChange(Rof Top Simple)
+
+      .enjoymentFontToChange:hover
+        @include forFontToChange(JaneAusten)
+
+      .surpriseFontToChange:hover
+        @include forFontToChange(Fresnel)
+        font-weight: 500
