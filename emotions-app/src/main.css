@@ -58,17 +58,9 @@ body {
   }
 }
 
-@font-face {
-  body {
-    font-family: Mistic;
-    src: url("./fonts/MisticRegular-4BLz9.ttf");
-    font-style: normal;
-  }
-}
-
 body h1, body h2, body h3 {
-  font-family: 'Hind', sans-serif;
-  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 100;
   font-size: 6em;
 }
 
@@ -125,7 +117,7 @@ body main section .surpriseFontToChange:hover {
 }
 
 body main section .surpriseFontToChange:hover {
-  font-family: Mistic;
+  font-family: UnifrakturMaguntia;
   font-size: 8em;
   cursor: default;
 }
