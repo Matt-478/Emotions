@@ -91,7 +91,7 @@ body main section {
 }
 
 body main section:first-child h1 {
-  font-size: 10em;
+  font-size: 12em;
 }
 
 body main section .angerFontToChange:hover {
@@ -126,7 +126,7 @@ body main section .surpriseFontToChange:hover {
   font-weight: 500;
 }
 
-body main section .surpriseFontToChange:hover {
+body main section .disgustFontToChange:hover {
   font-family: UnifrakturMaguntia;
   font-size: 8em;
   cursor: default;
