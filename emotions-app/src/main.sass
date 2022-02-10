@@ -1,6 +1,3 @@
-// GLOBAL VARIABLES
-  // meant for all h1, h2, h3 tags
-$headlineSize: 6em
 
 
 * 
@@ -18,14 +15,16 @@ body
   overflow-y: scroll
   scroll-behavior: smooth
 
+  // GLOBAL VARIABLES
+  // meant for all h1, h2, h3 tags
+  $headlineSize: 6em
+
 
   // MIXINS
   @mixin forFontToChange($emotionFontFamily)
     font-family: $emotionFontFamily
     font-size: $headlineSize + 2em
     cursor: default
-
-
 
   // ANGER
   @font-face 
@@ -57,8 +56,14 @@ body
     src: url("./fonts/Fresnel-DO9E.ttf")
     font-style: normal
 
+  // DISGUST
+  @font-face 
+    font-family: Mistic
+    src: url("./fonts/MisticRegular-4BLz9.ttf")
+    font-style: normal
+
   h1, h2, h3 
-    // font-family: Fresnel
+    // font-family: Mistic
     font-family: 'Hind', sans-serif
     font-weight: 700
     font-size: $headlineSize
@@ -92,3 +97,6 @@ body
       .surpriseFontToChange:hover
         @include forFontToChange(Fresnel)
         font-weight: 500
+
+      .surpriseFontToChange:hover
+        @include forFontToChange(Mistic)

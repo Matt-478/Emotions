@@ -58,6 +58,14 @@ body {
   }
 }
 
+@font-face {
+  body {
+    font-family: Mistic;
+    src: url("./fonts/MisticRegular-4BLz9.ttf");
+    font-style: normal;
+  }
+}
+
 body h1, body h2, body h3 {
   font-family: 'Hind', sans-serif;
   font-weight: 700;
@@ -114,5 +122,11 @@ body main section .surpriseFontToChange:hover {
   font-size: 8em;
   cursor: default;
   font-weight: 500;
+}
+
+body main section .surpriseFontToChange:hover {
+  font-family: Mistic;
+  font-size: 8em;
+  cursor: default;
 }
 /*# sourceMappingURL=main.css.map */

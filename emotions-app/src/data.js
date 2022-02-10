@@ -32,16 +32,6 @@ export const data = [
   {
     title: "Disgust",
     background: "rgb(112, 122, 139)",
-    classNameForFontChange: ""
+    classNameForFontChange: "surpriseFontToChange"
   },
-  // {
-  //   title: "Love",
-  //   background: "rgb(112, 122, 139)",
-  //   classNameForFontChange: ""
-  // },
-  // {
-  //   title: "Shame",
-  //   background: "rgb(112, 122, 139)",
-  //   classNameForFontChange: ""
-  // },
 ]
