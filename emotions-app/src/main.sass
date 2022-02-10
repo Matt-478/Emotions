@@ -20,12 +20,14 @@ body
   $headlineSize: 6em
 
 
-  // MIXINS
+  // MIXINS _________________________________________________________________________________________________________________________________________
   @mixin forFontToChange($emotionFontFamily)
     font-family: $emotionFontFamily
     font-size: $headlineSize + 2em
     cursor: default
 
+  
+  // FONT FACES _________________________________________________________________________________________________________________________________________
   // ANGER
   @font-face 
     font-family: Aarcover
@@ -61,9 +63,9 @@ body
     font-family: Mistic
     src: url("./fonts/MisticRegular-4BLz9.ttf")
     font-style: normal
+  // FONT FACES END____________________________________________________END____________________________________________________END____________________________________________________
 
   h1, h2, h3 
-    // font-family: Mistic
     font-family: 'Hind', sans-serif
     font-weight: 700
     font-size: $headlineSize
