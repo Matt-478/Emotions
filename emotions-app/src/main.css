@@ -137,4 +137,16 @@ body main section .disgustFontToChange:hover {
   cursor: default;
   position: absolute;
 }
+
+.demo_btn {
+  color: white;
+  cursor: pointer;
+  border: 2px solid cornflowerblue;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.demo_btn:hover {
+  background-color: rgba(222, 222, 222, 0.4);
+}
 /*# sourceMappingURL=main.css.map */
