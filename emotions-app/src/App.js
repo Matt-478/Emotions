@@ -31,6 +31,9 @@ function App() {
             <h1 
             className={group.classNameForFontChange}
             >{group.title}</h1>
+            <p>
+              {group.text_description}
+            </p>
           </section>
         ))}
       </main>
