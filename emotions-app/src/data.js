@@ -41,4 +41,10 @@ export const data = [
     background: "rgb(112, 122, 139)",
     classNameForFontChange: "disgustFontToChange"
   },
+  {
+    title: "",
+    text_description: "",
+    background: "rgb(112, 120, 10)",
+    classNameForFontChange: ""
+  },
 ]

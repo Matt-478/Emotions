@@ -2,6 +2,7 @@ import './main.css'
 import React, { useRef, useEffect } from 'react'
 
 import { data } from './data'
+import Demo_Btn from './components/Demo_Btn'
 
 function App() {
   const GroupRef = useRef([])
@@ -34,6 +35,7 @@ function App() {
             <p>
               {group.text_description}
             </p>
+            <Demo_Btn />
           </section>
         ))}
       </main>
