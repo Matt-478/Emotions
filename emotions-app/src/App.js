@@ -30,12 +30,12 @@ function App() {
             ref={(el) => (GroupRef.current[i] = el)}
             data-bgcolor={group.background}
           >
-            <h1 
-            // className={group.classNameForFontChange}
-            className={{display: (demoToggle && "none")}}
-            >
-              {group.title}
-            </h1>
+              <h1 
+              className={"allFontsProps"}
+              style={{fontFamily: (demoToggle) ? group.realFontFamily : 'Roboto Condensed' }}
+              >
+                {group.title}
+              </h1>
             <p>
               {group.text_description}
             </p>

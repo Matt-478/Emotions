@@ -9,13 +9,15 @@ export const data = [
     title: "Anger",
     text_description: "  Anger can be a particularly powerful emotion characterized by feelings of hostility, agitation, frustration, and antagonism towards others. Like fear, anger can play a part in your body's fight or flight response.  When a threat generates feelings of anger, you may be inclined to fend off the danger and protect yourself. Anger is often displayed through: Facial expressions: such as frowning or glaring. Body language: such as taking a strong stance or turning away. Tone of voice: such as speaking gruffly or yelling. Physiological responses: such as sweating or turning red. Aggressive behaviors: such as hitting, kicking, or throwing objects. While anger is often thought of as a negative emotion, it can sometimes be a good thing. It can be constructive in helping clarify your needs in a relationship, and it can also motivate you to take action and find solutions to things that are bothering you.",
     background: "rgb(209, 85, 47)",
-    classNameForFontChange: "angerFontToChange"
+    classNameForFontChange: "angerFontToChange",
+    realFontFamily: "Aarcover"
   },
   {
     title: "Sadness",
     text_description: "Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others. The type and severity of sadness can vary depending upon the root cause, and how people cope with such feelings can also differ",
     background: "rgb(230, 210, 99)",
-    classNameForFontChange: "sadnessFontToChange"
+    classNameForFontChange: "sadnessFontToChange",
+    realFontFamily: "Rof Top Simple"
   },
   {
     title: "Surprise",

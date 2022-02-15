@@ -18,6 +18,12 @@ body {
   scroll-behavior: smooth;
 }
 
+body .allFontsProps {
+  font-size: 8em;
+  cursor: default;
+  position: absolute;
+}
+
 @font-face {
   body {
     font-family: Aarcover;
