@@ -32,7 +32,10 @@ function App() {
           >
               <h1 
               className={"allFontsProps"}
-              style={{fontFamily: (demoToggle) ? group.realFontFamily : 'Roboto Condensed' }}
+              style={{fontFamily: (demoToggle) ? 
+                // (group.realFontFamily === "Aarcover" ? style=font-variant-caps: all-small-caps : null) 
+                // :'Roboto Condensed'
+               }}
               >
                 {group.title}
               </h1>
