@@ -1,11 +1,12 @@
 import './main.css'
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 
 import { data } from './data'
-import Demo_Btn from './components/Demo_Btn'
+import DemoBtn from './components/DemoBtn'
 
 function App() {
   const GroupRef = useRef([])
+  const[demoToggle, setDemoToggle] = useState(false)
 
   const bgChange = (el) => {
     const styles = GroupRef.current.map((group, i) => {
@@ -30,12 +31,15 @@ function App() {
             data-bgcolor={group.background}
           >
             <h1 
-            className={group.classNameForFontChange}
-            >{group.title}</h1>
+            // className={group.classNameForFontChange}
+            className={{display: (demoToggle && "none")}}
+            >
+              {group.title}
+            </h1>
             <p>
               {group.text_description}
             </p>
-            <Demo_Btn />
+            <DemoBtn toggleValue={demoToggle} setToggleValue={setDemoToggle}/>
           </section>
         ))}
       </main>

@@ -66,8 +66,6 @@ body h1, body h2, body h3 {
 
 body p {
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 100;
-  font-size: 2.5em;
 }
 
 body main {
@@ -92,50 +90,6 @@ body main section {
 
 body main section:first-child h1 {
   font-size: 12em;
-}
-
-body main section .angerFontToChange:hover {
-  font-family: Aarcover;
-  font-size: 8em;
-  cursor: default;
-  position: absolute;
-  font-variant-caps: all-small-caps;
-}
-
-body main section .fearFontToChange:hover {
-  font-family: Tupo Vyaz;
-  font-size: 8em;
-  cursor: default;
-  position: absolute;
-}
-
-body main section .sadnessFontToChange:hover {
-  font-family: Rof Top Simple;
-  font-size: 8em;
-  cursor: default;
-  position: absolute;
-}
-
-body main section .enjoymentFontToChange:hover {
-  font-family: JaneAusten;
-  font-size: 8em;
-  cursor: default;
-  position: absolute;
-}
-
-body main section .surpriseFontToChange:hover {
-  font-family: Fresnel;
-  font-size: 8em;
-  cursor: default;
-  position: absolute;
-  font-weight: 500;
-}
-
-body main section .disgustFontToChange:hover {
-  font-family: UnifrakturMaguntia;
-  font-size: 8em;
-  cursor: default;
-  position: absolute;
 }
 
 .demo_btn {
