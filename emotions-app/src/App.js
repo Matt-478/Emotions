@@ -30,12 +30,12 @@ function App() {
             ref={(el) => (GroupRef.current[i] = el)}
             data-bgcolor={group.background}
           >
+            {/* {if(demoToggle && ) } */}
               <h1 
               className={"allFontsProps"}
-              style={{fontFamily: (demoToggle) ? 
-                // (group.realFontFamily === "Aarcover" ? style=font-variant-caps: all-small-caps : null) 
-                // :'Roboto Condensed'
+              style={{fontFamily: demoToggle ? group.realFontFamily : 'Roboto Condensed',
                }}
+              //  style={{(group.realFontFamily === "Aarcover" ? style = fontVariantCaps = "all-small-caps" : }}
               >
                 {group.title}
               </h1>

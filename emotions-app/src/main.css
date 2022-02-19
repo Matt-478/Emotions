@@ -18,12 +18,6 @@ body {
   scroll-behavior: smooth;
 }
 
-body .allFontsProps {
-  font-size: 8em;
-  cursor: default;
-  position: absolute;
-}
-
 @font-face {
   body {
     font-family: Aarcover;
@@ -98,6 +92,12 @@ body main section {
 
 body main section:first-child h1 {
   font-size: 12em;
+}
+
+body main section:first-child h1 .allFontsProps {
+  font-size: 8em;
+  cursor: default;
+  position: absolute;
 }
 
 .demo_btn {
