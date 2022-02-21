@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from 'react'
 
 import { data } from './data'
 import DemoBtn from './components/DemoBtn'
+import AngerSection from './components/AngerSection'
 
 function App() {
   const GroupRef = useRef([])
@@ -22,6 +23,13 @@ function App() {
     window.addEventListener('scroll', bgChange)
   }, [])
 
+  let sectionElements = document.getElementsByTagName("section")
+  let sectionElementsArray = Array.from(sectionElements); //convert to array
+  console.log(sectionElementsArray)
+  // let newArray = sectionElementsArray.map((item) => {
+  //   console.log(item.id)
+  // })
+
   return (
     <>
       <main>
@@ -29,6 +37,7 @@ function App() {
           <section 
             ref={(el) => (GroupRef.current[i] = el)}
             data-bgcolor={group.background}
+            id={group.title}
           >
             {/* {if(demoToggle && ) } */}
               <h1 
