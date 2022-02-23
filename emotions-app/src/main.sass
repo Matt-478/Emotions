@@ -19,6 +19,9 @@ body
   // meant for all h1, h2, h3 tags
   $headlineSize: 6em
 
+  .p-relative
+    position: relative
+
 
   // MIXINS _________________________________________________________________________________________________________________________________________
   @mixin forFontToChange($emotionFontFamily)
@@ -91,6 +94,13 @@ body
           font-size: $headlineSize + 2em
           cursor: default
           position: absolute
+        
+    .emotionTitle 
+      position: absolute
+      top: 0.5em
+      left: 0.4em
+      
+        
 
       // .angerFontToChange:hover
       //   @include forFontToChange(Aarcover)

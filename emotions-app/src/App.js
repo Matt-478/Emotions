@@ -44,20 +44,31 @@ function App() {
             ref={(el) => (GroupRef.current[i] = el)}
             data-bgcolor={group.background}
             id={group.title}
+            className={"p-relative"}
           >
             {/* {if(demoToggle && ) } */}
               <h1 
-              className={"allFontsProps"}
-              style={{fontFamily: demoToggle ? group.realFontFamily : 'Roboto Condensed',
-               }}
+              className={"allFontsProps emotionTitle"}
+              style={{fontFamily: demoToggle ? group.realFontFamily : 'Roboto Condensed'}}
               //  style={{(group.realFontFamily === "Aarcover" ? style = fontVariantCaps = "all-small-caps" : }}
               >
                 {group.title}
               </h1>
-            <p>
+            <p
+              style={{
+                width: "30em",
+                position: "absolute",
+                top: "8em"}}>
               {group.text_description}
             </p>
-            <DemoBtn toggleValue={demoToggle} setToggleValue={setDemoToggle}/>
+            <DemoBtn
+             toggleValue={demoToggle}
+             setToggleValue={setDemoToggle}
+             style={{
+              position: "absolute",
+              right: "0",
+              bottom: "5em"}}
+             />
           </section>
         ))}
       </main>
