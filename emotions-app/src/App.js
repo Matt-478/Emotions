@@ -1,11 +1,13 @@
 import './main.css'
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 
 import { data } from './data'
-import Demo_Btn from './components/Demo_Btn'
+import DemoBtn from './components/DemoBtn'
+import AngerSection from './components/AngerSection'
 
 function App() {
   const GroupRef = useRef([])
+  const[demoToggle, setDemoToggle] = useState(false)
 
   const bgChange = (el) => {
     const styles = GroupRef.current.map((group, i) => {
@@ -21,6 +23,19 @@ function App() {
     window.addEventListener('scroll', bgChange)
   }, [])
 
+  // 1. List of all id's
+  let sectionElements = document.getElementsByTagName("section")
+  let sectionElementsArray = Array.from(sectionElements); //convert to array
+  console.log(sectionElementsArray)
+  // let newArray = sectionElementsArray.map((item) => {
+  //   console.log(item.id)
+  // })
+
+  // 2. Make sure when we scroll we know which one we're viewing
+  window.addEventListener("scroll", (element) => {
+    console.log(element.currentTarget)
+  })
+
   return (
     <>
       <main>
@@ -28,14 +43,21 @@ function App() {
           <section 
             ref={(el) => (GroupRef.current[i] = el)}
             data-bgcolor={group.background}
+            id={group.title}
           >
-            <h1 
-            className={group.classNameForFontChange}
-            >{group.title}</h1>
+            {/* {if(demoToggle && ) } */}
+              <h1 
+              className={"allFontsProps"}
+              style={{fontFamily: demoToggle ? group.realFontFamily : 'Roboto Condensed',
+               }}
+              //  style={{(group.realFontFamily === "Aarcover" ? style = fontVariantCaps = "all-small-caps" : }}
+              >
+                {group.title}
+              </h1>
             <p>
               {group.text_description}
             </p>
-            <Demo_Btn />
+            <DemoBtn toggleValue={demoToggle} setToggleValue={setDemoToggle}/>
           </section>
         ))}
       </main>
