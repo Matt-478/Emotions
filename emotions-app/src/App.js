@@ -23,12 +23,18 @@ function App() {
     window.addEventListener('scroll', bgChange)
   }, [])
 
+  // 1. List of all id's
   let sectionElements = document.getElementsByTagName("section")
   let sectionElementsArray = Array.from(sectionElements); //convert to array
   console.log(sectionElementsArray)
   // let newArray = sectionElementsArray.map((item) => {
   //   console.log(item.id)
   // })
+
+  // 2. Make sure when we scroll we know which one we're viewing
+  window.addEventListener("scroll", (element) => {
+    console.log(element.currentTarget)
+  })
 
   return (
     <>
