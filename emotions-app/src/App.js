@@ -72,7 +72,10 @@ function App() {
              />
           </section>
         ))}
-        <EnjoymentSection data={data}/>
+        <EnjoymentSection 
+          data={data}  
+          demoToggle={demoToggle}
+          state={demoToggle, setDemoToggle}/>
       </main>
     </>
   );

@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import DemoBtn from './DemoBtn'
 
 export default class EnjoymentSection extends Component {
-  render(props) {
-    this.props.data.map(() => {
-      console.log("yes")
-    })
+  // constructor(props){
+  //   super(props)
+  // }
 
+  render() {
     let enjoymentObj = this.props.data.find( ({title}) => {
       if (title === "Enjoyment") {
         return title
@@ -23,7 +23,7 @@ export default class EnjoymentSection extends Component {
           >
             <h1 
             className={"allFontsProps emotionTitle"}
-            // style={{fontFamily: demoToggle ? props.data.realFontFamily : 'Roboto Condensed'}}
+            style={{fontFamily: this.props.demoToggle ? enjoymentObj.realFontFamily : 'Roboto Condensed'}}
             >
               {enjoymentObj.title}
             </h1>
@@ -35,8 +35,8 @@ export default class EnjoymentSection extends Component {
             {enjoymentObj.text_description}
           </p>
           <DemoBtn
-          //  toggleValue={demoToggle}
-          //  setToggleValue={setDemoToggle}
+           toggleValue={this.props.demoToggle}
+           setToggleValue={this.props.setDemoToggle}
            style={{
             position: "absolute",
             right: "0",
