@@ -4,6 +4,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import { data } from './data'
 import DemoBtn from './components/DemoBtn'
 import AngerSection from './components/AngerSection'
+import EnjoymentSection from './components/EnjoymentSection'
 
 function App() {
   const GroupRef = useRef([])
@@ -71,6 +72,7 @@ function App() {
              />
           </section>
         ))}
+        <EnjoymentSection data={data}/>
       </main>
     </>
   );
