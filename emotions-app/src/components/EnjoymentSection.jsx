@@ -36,7 +36,7 @@ export default class EnjoymentSection extends Component {
           </p>
           <DemoBtn
            toggleValue={this.props.demoToggle}
-           setToggleValue={this.props.setDemoToggle}
+           setToggleValue={this.props.changeState}
            style={{
             position: "absolute",
             right: "0",

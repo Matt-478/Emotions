@@ -75,7 +75,8 @@ function App() {
         <EnjoymentSection 
           data={data}  
           demoToggle={demoToggle}
-          state={demoToggle, setDemoToggle}/>
+          state={demoToggle}
+          changeState={setDemoToggle}/>
       </main>
     </>
   );
