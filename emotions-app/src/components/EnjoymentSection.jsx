@@ -16,13 +16,13 @@ export default function EnjoymentSection ({ demoToggle, changeState }) {
         <section 
           className={"p-relative"}
           id={enjoymentObj.title}
-          >
-            <h1 
+        >
+          <h1 
             className={"allFontsProps emotionTitle"}
             style={{fontFamily: demoToggle ? enjoymentObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
-            >
-              {enjoymentObj.title}
-            </h1>
+          >
+            {enjoymentObj.title}
+          </h1>
           <p
             style={{
               width: "30em",
