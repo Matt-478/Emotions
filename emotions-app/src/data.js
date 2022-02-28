@@ -17,12 +17,14 @@ export const data = [
   // },
   {
     title: "Sadness",
-    text_description: "Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others. The type and severity of sadness can vary depending upon the root cause, and how people cope with such feelings can also differ",
-    background: "rgb(208, 138, 99)",
-    classNameForFontChange: "sadnessFontToChange",
-    realFontFamily: "Rof Top Simple",
-    style: {
-      backgroundColor: "cornflowerblue"
+    emotionProps: {
+      text_description: "Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others. The type and severity of sadness can vary depending upon the root cause, and how people cope with such feelings can also differ",
+      background: "rgb(208, 138, 99)",
+      classNameForFontChange: "sadnessFontToChange",
+      realFontFamily: "Rof Top Simple",
+      style: {
+        backgroundColor: "cornflowerblue"
+      }
     }
   },
   // {
@@ -34,22 +36,26 @@ export const data = [
   // },
   {
     title: "Enjoyment",
-    text_description: "Enjoyment also known as happiness is often defined as a pleasant emotional state that is characterized by feelings of contentment, joy, gratification, satisfaction, and well-being. Research on happiness has increased significantly since the 1960s within a number of disciplines, including the branch of psychology known as positive psychology. This type of emotion is sometimes expressed through: Facial expressions: such as smiling. While happiness is considered one of the basic human emotions, the things we think will create happiness tend to be heavily influenced by culture. For example, pop culture influences tend to emphasize that attaining certain things such as buying a home or having a high-paying job will result in happiness. The realities of what actually contributes to happiness are often much more complex and more highly individualized.",
-    background: "rgb(230, 210, 99)",
-    classNameForFontChange: "enjoymentFontToChange",
-    realFontFamily: "JaneAusten",
-    style: {
-      backgroundColor: "beige"
+    emotionProps: {
+      text_description: "Enjoyment also known as happiness is often defined as a pleasant emotional state that is characterized by feelings of contentment, joy, gratification, satisfaction, and well-being. Research on happiness has increased significantly since the 1960s within a number of disciplines, including the branch of psychology known as positive psychology. This type of emotion is sometimes expressed through: Facial expressions: such as smiling. While happiness is considered one of the basic human emotions, the things we think will create happiness tend to be heavily influenced by culture. For example, pop culture influences tend to emphasize that attaining certain things such as buying a home or having a high-paying job will result in happiness. The realities of what actually contributes to happiness are often much more complex and more highly individualized.",
+      background: "rgb(230, 210, 99)",
+      classNameForFontChange: "enjoymentFontToChange",
+      realFontFamily: "JaneAusten",
+      style: {
+        backgroundColor: "beige"
+      }
     }
   },
   {
     title: "Fear",
-    text_description: "Fear is a powerful emotion that can also play an important role in survival. When you face some sort of danger and experience fear, you go through what is known as the fight or flight response.  Your muscles become tense, your heart rate and respiration increase, and your mind becomes more alert, priming your body to either run from the danger or stand and fight. This response helps ensure that you are prepared to effectively deal with threats in your environment. Expressions of this type of emotion can include: Facial expressions: such as widening the eyes and pulling back the chin. Body language: attempts to hide or flea from the threat. Physiological reactions: such as rapid breathing and heartbeat. Of course, not everyone experiences fear in the same way. Some people may be more sensitive to fear and certain situations or objects may be more likely to trigger this emotion. Fear is the emotional response to an immediate threat. We can also develop a similar reaction to anticipated threats or even our thoughts about potential dangers, and this is what we generally think of as anxiety.",
-    background: "rgb(112, 122, 139)",
-    classNameForFontChange: "fearFontToChange",
-    realFontFamily: "Tupo Vyaz",
-    style: {
-      backgroundColor: "orange"
+    emotionProps: {
+      text_description: "Fear is a powerful emotion that can also play an important role in survival. When you face some sort of danger and experience fear, you go through what is known as the fight or flight response.  Your muscles become tense, your heart rate and respiration increase, and your mind becomes more alert, priming your body to either run from the danger or stand and fight. This response helps ensure that you are prepared to effectively deal with threats in your environment. Expressions of this type of emotion can include: Facial expressions: such as widening the eyes and pulling back the chin. Body language: attempts to hide or flea from the threat. Physiological reactions: such as rapid breathing and heartbeat. Of course, not everyone experiences fear in the same way. Some people may be more sensitive to fear and certain situations or objects may be more likely to trigger this emotion. Fear is the emotional response to an immediate threat. We can also develop a similar reaction to anticipated threats or even our thoughts about potential dangers, and this is what we generally think of as anxiety.",
+      background: "rgb(112, 122, 139)",
+      classNameForFontChange: "fearFontToChange",
+      realFontFamily: "Tupo Vyaz",
+      style: {
+        backgroundColor: "orange"
+      }
     }
   },
   // {
