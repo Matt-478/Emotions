@@ -21,16 +21,16 @@ function App() {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', bgChange)
+    // window.addEventListener('scroll', bgChange)
   }, [])
 
   // 1. List of all id's
   let sectionElements = document.getElementsByTagName("section")
   let sectionElementsArray = Array.from(sectionElements); //convert to array
   console.log(sectionElementsArray)
-  // let newArray = sectionElementsArray.map((item) => {
-  //   console.log(item.id)
-  // })
+  let newArray = sectionElementsArray.map((item) => {
+    console.log(item.id)
+  })
 
   // 2. Make sure when we scroll we know which one we're viewing
   window.addEventListener("scroll", (element) => {
@@ -47,7 +47,7 @@ function App() {
             id={group.title}
             className={"p-relative"}
           >
-            {/* {if(demoToggle && ) } */}
+            {/* {if(demoToggle && ) }  */}
               <h1 
               className={"allFontsProps emotionTitle"}
               style={{fontFamily: demoToggle ? group.realFontFamily : 'Roboto Condensed'}}
@@ -72,11 +72,26 @@ function App() {
              />
           </section>
         ))}
-        <EnjoymentSection 
+
+
+        {/* <EnjoymentSection 
           data={data}  
           demoToggle={demoToggle}
           state={demoToggle}
-          changeState={setDemoToggle}/>
+          changeState={setDemoToggle}
+          ref={(el) => (GroupRef.current = el)}
+        /> */}
+
+        {/* {
+          data.map((group, i) => (
+            <AngerSection 
+                ref={(el) => (GroupRef.current[i] = el)}
+                data_bgcolor={group.background}
+                id={group.title}
+              />
+              // console.log(group)
+          ))
+        } */}
       </main>
     </>
   );

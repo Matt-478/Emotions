@@ -17,9 +17,13 @@ export default class EnjoymentSection extends Component {
       // <div>
         <section 
           // ref={(el) => (GroupRef.current[i] = el)}
-          data-bgcolor={enjoymentObj.background}
-          id={enjoymentObj.title}
+          // data-bgcolor={enjoymentObj.background}
+          // id={enjoymentObj.title}
           className={"p-relative"}
+          ref={this.props.ref}
+
+          data-bgcolor={this.props.data_bgcolor}
+          id={this.props.id}
           >
             <h1 
             className={"allFontsProps emotionTitle"}

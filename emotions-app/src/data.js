@@ -15,7 +15,7 @@ export const data = [
   {
     title: "Sadness",
     text_description: "Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others. The type and severity of sadness can vary depending upon the root cause, and how people cope with such feelings can also differ",
-    background: "rgb(230, 210, 99)",
+    background: "rgb(208, 138, 99)",
     classNameForFontChange: "sadnessFontToChange",
     realFontFamily: "Rof Top Simple"
   },

@@ -1,10 +1,14 @@
 import React from 'react'
 
-function AngerSection() {
+function AngerSection(props) {
   return (
-    <div>
+    <section
+      ref={props.ref}
+      data-bgcolor={props.data_bgcolor}
+      id={props.id}
+    >
       Anger Section here
-    </div>
+    </section>
   )
 }
 
