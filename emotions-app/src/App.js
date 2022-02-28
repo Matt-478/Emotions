@@ -1,5 +1,5 @@
 import './main.css'
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { data } from './data'
 import DemoBtn from './components/DemoBtn'
@@ -7,22 +7,7 @@ import AngerSection from './components/AngerSection'
 import EnjoymentSection from './components/EnjoymentSection'
 
 function App() {
-  const GroupRef = useRef([])
   const[demoToggle, setDemoToggle] = useState(false)
-
-  const bgChange = (el) => {
-    const styles = GroupRef.current.map((group, i) => {
-    const rect = group.getBoundingClientRect()
-
-    return { group, rect }
-    }).find((group) => group.rect.bottom >= window.innerHeight * 0.5)
-
-    document.body.style.backgroundColor = `${styles.group.dataset.bgcolor}`
-  }
-
-  useEffect(() => {
-    // window.addEventListener('scroll', bgChange)
-  }, [])
 
   // 1. List of all id's
   let sectionElements = document.getElementsByTagName("section")
@@ -40,12 +25,11 @@ function App() {
   return (
     <>
       <main>
-        {data.map((group, i) => (
+        {data.map((group) => (
           <section 
-            ref={(el) => (GroupRef.current[i] = el)}
-            data-bgcolor={group.background}
             id={group.title}
             className={"p-relative"}
+            style={{backgroundColor: group.style.backgroundColor}}
           >
             {/* {if(demoToggle && ) }  */}
               <h1 
@@ -72,26 +56,6 @@ function App() {
              />
           </section>
         ))}
-
-
-        {/* <EnjoymentSection 
-          data={data}  
-          demoToggle={demoToggle}
-          state={demoToggle}
-          changeState={setDemoToggle}
-          ref={(el) => (GroupRef.current = el)}
-        /> */}
-
-        {/* {
-          data.map((group, i) => (
-            <AngerSection 
-                ref={(el) => (GroupRef.current[i] = el)}
-                data_bgcolor={group.background}
-                id={group.title}
-              />
-              // console.log(group)
-          ))
-        } */}
       </main>
     </>
   );
