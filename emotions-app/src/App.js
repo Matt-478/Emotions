@@ -59,7 +59,7 @@ function App() {
           </section>
         ))} */}
         <SadnessSection />
-        <FearSection />
+        <FearSection demoToggle={demoToggle} changeState={setDemoToggle}/>
         {/* <EnjoymentSection /> */}
       </main>
     </>
