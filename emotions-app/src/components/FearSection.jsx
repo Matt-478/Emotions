@@ -12,25 +12,22 @@ export default function FearSection() {
 
   return (
     <>
-    {/* <section 
+      <section 
         className={"p-relative"}
-        ref={this.props.ref}
-
-        data-bgcolor={this.props.data_bgcolor}
-        id={this.props.id}
+        id={fearObj.title}
         >
           <h1 
           className={"allFontsProps emotionTitle"}
-          style={{fontFamily: this.props.demoToggle ? enjoymentObj.realFontFamily : 'Roboto Condensed'}}
+          // style={{fontFamily: demoToggle ? fearObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
           >
-            {enjoymentObj.title}
-          </h1> */}
+            {fearObj.title}
+          </h1>
         <p
           style={{
             width: "30em",
             position: "absolute",
             top: "8em"}}>
-          {/* {enjoymentObj.text_description} */}
+          {fearObj.emotionProps.text_description}
         </p>
         {/* <DemoBtn
          toggleValue={this.props.demoToggle}
@@ -40,7 +37,7 @@ export default function FearSection() {
           right: "0",
           bottom: "5em"}}
          /> */}
-      {/* </section> */}
+      </section>
     </>
   )
 }
