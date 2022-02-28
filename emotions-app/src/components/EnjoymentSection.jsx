@@ -9,7 +9,7 @@ export default function EnjoymentSection ({ demoToggle, changeState }) {
       return obj.emotionProps
     }
   })
-  console.log(enjoymentObj)
+  // console.log(enjoymentObj)
 
     return (
       <>

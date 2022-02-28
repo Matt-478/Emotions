@@ -18,7 +18,7 @@ export default function EnjoymentSection ({ demoToggle }) {
         >
           <h1 
             className={"allFontsProps emotionTitle"}
-            style={{fontFamily: demoToggle ? welcomeObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
+            style={{fontFamily: 'Roboto Condensed'}}
           >
             {welcomeObj.text_description}
           </h1>

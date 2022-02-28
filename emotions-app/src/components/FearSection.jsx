@@ -9,7 +9,7 @@ export default function FearSection({ demoToggle, changeState }) {
       return obj.emotionProps
     }
   })
-  console.log(fearObj)
+  // console.log(fearObj)
 
   return (
     <>

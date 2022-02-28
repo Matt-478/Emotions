@@ -9,7 +9,7 @@ export default function SadnessSection({ demoToggle, changeState }) {
       return obj.emotionProps
     }
   })
-  console.log(sadObj)
+  // console.log(sadObj)
 
   return (
     <>
