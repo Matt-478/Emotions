@@ -2,7 +2,8 @@ import './main.css'
 import React, { useEffect, useState } from 'react'
 
 import { data } from './data'
-import DemoBtn from './components/DemoBtn'
+
+import WelcomeSection from './components/WelcomeSection'
 import EnjoymentSection from './components/EnjoymentSection'
 import SadnessSection from './components/SadnessSection'
 import FearSection from './components/FearSection'
@@ -10,6 +11,12 @@ import FearSection from './components/FearSection'
 
 function App() {
   const[demoToggle, setDemoToggle] = useState(false)
+
+    // let sadObj = data.find((obj) => {
+    //   if(obj.title === "Sadness") {
+    //     return obj.emotionProps
+    //   }
+    // })
 
   // 1. List of all id's
   // let sectionElements = document.getElementsByTagName("section")
@@ -24,9 +31,21 @@ function App() {
   //   console.log(element.currentTarget)
   // })
 
+    // let welcomeObj = data.find((obj) => (
+    //   if(obj.title === "Welcome to Emotions") {
+    //     return obj.emotionProps
+    //   }
+    // ))
+    // console.log(welcomeObj)
+  
+
   return (
     <>
       <main>
+      <WelcomeSection demoToggle={demoToggle}/>
+      <SadnessSection demoToggle={demoToggle} changeState={setDemoToggle}/>
+      <FearSection demoToggle={demoToggle} changeState={setDemoToggle}/>
+      <EnjoymentSection demoToggle={demoToggle} changeState={setDemoToggle}/>
         {/* {data.map((group) => (
           <section 
             id={group.title}
@@ -58,9 +77,6 @@ function App() {
              />
           </section>
         ))} */}
-        <SadnessSection demoToggle={demoToggle} changeState={setDemoToggle}/>
-        <FearSection demoToggle={demoToggle} changeState={setDemoToggle}/>
-        {/* <EnjoymentSection /> */}
       </main>
     </>
   );

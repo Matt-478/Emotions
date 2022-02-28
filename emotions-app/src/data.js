@@ -1,7 +1,7 @@
 export const data = [
   {
-    title: "Welcome to Emotions",
-    text_description: "",
+    title: "Welcome",
+    text_description: "Welcome to Emotions",
     background: "cornflowerblue",
     classNameForFontChange: "",
     style: {
