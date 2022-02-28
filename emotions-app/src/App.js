@@ -3,35 +3,37 @@ import React, { useEffect, useState } from 'react'
 
 import { data } from './data'
 import DemoBtn from './components/DemoBtn'
-import AngerSection from './components/AngerSection'
 import EnjoymentSection from './components/EnjoymentSection'
+import SadnessSection from './components/SadnessSection'
+import FearSection from './components/FearSection'
+
 
 function App() {
   const[demoToggle, setDemoToggle] = useState(false)
 
   // 1. List of all id's
-  let sectionElements = document.getElementsByTagName("section")
-  let sectionElementsArray = Array.from(sectionElements); //convert to array
-  console.log(sectionElementsArray)
-  let newArray = sectionElementsArray.map((item) => {
-    console.log(item.id)
-  })
+  // let sectionElements = document.getElementsByTagName("section")
+  // let sectionElementsArray = Array.from(sectionElements); //convert to array
+  // console.log(sectionElementsArray)
+  // let newArray = sectionElementsArray.map((item) => {
+  //   console.log(item.id)
+  // })
 
   // 2. Make sure when we scroll we know which one we're viewing
-  window.addEventListener("scroll", (element) => {
-    console.log(element.currentTarget)
-  })
+  // window.addEventListener("scroll", (element) => {
+  //   console.log(element.currentTarget)
+  // })
 
   return (
     <>
       <main>
-        {data.map((group) => (
+        {/* {data.map((group) => (
           <section 
             id={group.title}
             className={"p-relative"}
             style={{backgroundColor: group.style.backgroundColor}}
           >
-            {/* {if(demoToggle && ) }  */}
+            {/* {if(demoToggle && ) }  
               <h1 
               className={"allFontsProps emotionTitle"}
               style={{fontFamily: demoToggle ? group.realFontFamily : 'Roboto Condensed'}}
@@ -55,7 +57,10 @@ function App() {
               bottom: "5em"}}
              />
           </section>
-        ))}
+        ))} */}
+        <SadnessSection />
+        <FearSection />
+        {/* <EnjoymentSection /> */}
       </main>
     </>
   );
