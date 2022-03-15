@@ -2,7 +2,7 @@ import React from 'react'
 import { data } from '../data'
 import DemoBtn from './DemoBtn'
 
-export default function SadnessSection({ demoToggle, changeState }) {
+export default function SadnessSection({ demoToggle, changeState, fromIfStatement }) {
 
   let sadObj = data.find((obj) => {
     if(obj.title === "Sadness") {
@@ -23,6 +23,11 @@ export default function SadnessSection({ demoToggle, changeState }) {
           >
             {sadObj.title}
           </h1>
+          {
+            fromIfStatement &&  (
+              <h2>IT IS TRUE</h2>
+            )
+          }
         <p
           style={{
             width: "30em",

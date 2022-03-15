@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     console.log("----------------------------")
     // createEmotionIds()
-    triggerSoloState(data, createEmotionIds)
+    triggerSoloState(data)
   }, [])
 
   // returns section id's
@@ -49,7 +49,7 @@ function App() {
 
 
   let emotionIDs = createEmotionIds()
-  console.log("ID's from createEmotionIDs function: ", emotionIDs)
+  // console.log("ID's from createEmotionIDs function: ", emotionIDs)
 
 
   function triggerSoloState (data) {
@@ -59,20 +59,24 @@ function App() {
       titles.push(item.title)
     })
     console.log("titles from triggerSoloState function: ", titles)
+    console.log("titles from createEmotionIDs function: ", emotionIDs)
 
-    // console.log("emotion ID's from the other function", ids)
+    if(emotionIDs.length > 1) {
+      console.log("true, more than 1")
+    } 
 
-    // if(emotionIDs === titles) {
-    //   return true 
-    // } else {
-    //   return false
-    // }
+    if(emotionIDs[0] === titles[0]) {
+      console.log("TRUE")
+      // now I need to trigger something to happen on these components
+    } else {
+      console.log("FALSE")
+    }
   }
 
   return (
     <>
       <main>
-        <WelcomeSection demoToggle={demoToggle}/>
+        <WelcomeSection demoToggle={demoToggle} />
         <SadnessSection id={"Sadness"} demoToggle={demoToggle} changeState={setDemoToggle}/>
         <FearSection id={"Fear"} demoToggle={demoToggle} changeState={setDemoToggle}/>
         <EnjoymentSection id={"Enjoyment"} demoToggle={demoToggle} changeState={setDemoToggle}/>
