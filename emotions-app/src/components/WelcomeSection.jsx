@@ -8,7 +8,7 @@ export default function EnjoymentSection ({ demoToggle }) {
       return obj
     }
   })
-  console.log(welcomeObj)
+  // console.log(welcomeObj)
 
     return (
       <>
