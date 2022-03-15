@@ -11,6 +11,7 @@ import FearSection from './components/FearSection'
 
 function App() {
   const[demoToggle, setDemoToggle] = useState(false)
+
   useEffect(() => {
     createEmotionIds()
   }, [])
@@ -19,15 +20,24 @@ function App() {
     // Access the elements
     // loop through all the children of "main"
     // return new variables, each with their according id value
+
     let mainNode = document.getElementsByTagName("main")
     let arrayOfChildNodes = mainNode[0].childNodes
     let arrayofChildElements = Array.from(arrayOfChildNodes)
     console.log(arrayofChildElements)
 
     arrayofChildElements.forEach((item) => {
-      console.log("id values " , item.id)
+      // checking if there is an id value
+      // console.log("id values " , item.id)
+      
+      // return new variables, each with their according id value
+      let emotionSection = item.id
+      console.log("each emotion section variable " , emotionSection)
+
+      return emotionSection
     })
   }
+
 
   return (
     <>
