@@ -67,7 +67,7 @@ function App() {
 
     if(emotionIDs[0] === titles[0]) {
       console.log("TRUE")
-      // now I need to trigger something to happen on these components
+      // now I need to trigger something to happen on these components3
     } else {
       console.log("FALSE")
     }
