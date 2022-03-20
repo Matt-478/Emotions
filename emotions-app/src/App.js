@@ -7,15 +7,20 @@ import WelcomeSection from './components/WelcomeSection'
 import EnjoymentSection from './components/EnjoymentSection'
 import SadnessSection from './components/SadnessSection'
 import FearSection from './components/FearSection'
+import TrueComponent from './components/TrueComponent'
 
+// READ HERE FUTURE ME: I'M NOT 100% SURE WHERE THE ISSUE IS 
+// 1. NOTHING'S RENDERING WHEN ASKED
+// 2. THE OTHER ARRAY ISN'T UPDATING PROPERLY
 
 function App() {
   const[demoToggle, setDemoToggle] = useState(false)
+  const[emotionReturn, setEmotionReturn] = useState([])
 
   useEffect(() => {
     console.log("----------------------------")
-    // createEmotionIds()
-    triggerSoloState(data)
+    createEmotionIds()
+    // triggerSoloState(data)
   }, [])
 
   // returns section id's
@@ -34,9 +39,10 @@ function App() {
       arrayofChildElements.forEach((item) => {
         possibleValues.push(item.id)
       })
-      // console.log("emotion section variable array " , possibleValues)
-
-      return possibleValues
+      console.log("emotion section variable array " , possibleValues)
+      setEmotionReturn(possibleValues)
+      console.log("state " + emotionReturn)
+      // return possibleValues
     } else {
       return "ERROR"
     }
@@ -47,8 +53,8 @@ function App() {
     // return possibleValues
   }
 
-
-  let emotionIDs = createEmotionIds()
+  
+  // let emotionIDs = createEmotionIds()
   // console.log("ID's from createEmotionIDs function: ", emotionIDs)
 
 
@@ -58,15 +64,16 @@ function App() {
     data.forEach((item) => {
       titles.push(item.title)
     })
-    console.log("titles from triggerSoloState function: ", titles)
-    console.log("titles from createEmotionIDs function: ", emotionIDs)
+    console.log("titles from triggerSoloState function: ", titles.sort()) 
+    console.log("titles from createEmotionIDs function: ", emotionReturn.sort())
 
-    if(emotionIDs.length > 1) {
+    if(emotionReturn.length > 1) {
       console.log("true, more than 1")
     } 
 
-    if(emotionIDs[0] === titles[0]) {
+    if(emotionReturn[0] === titles[0]) {
       console.log("TRUE")
+      return <TrueComponent />
       // now I need to trigger something to happen on these components3
     } else {
       console.log("FALSE")
