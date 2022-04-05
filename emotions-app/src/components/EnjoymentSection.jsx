@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { data } from '../data'
 import DemoBtn from './DemoBtn'
 
@@ -11,6 +11,8 @@ export default function EnjoymentSection ({ demoToggle, changeState }) {
   })
   // console.log(enjoymentObj)
 
+  const[enjoyment, setEnjoyment] = useState(false)
+
     return (
       <>
         <section 
@@ -19,7 +21,7 @@ export default function EnjoymentSection ({ demoToggle, changeState }) {
         >
           <h1 
             className={"allFontsProps emotionTitle"}
-            style={{fontFamily: demoToggle ? enjoymentObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
+            style={{fontFamily: enjoyment ? enjoymentObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
           >
             {enjoymentObj.title}
           </h1>
@@ -31,8 +33,8 @@ export default function EnjoymentSection ({ demoToggle, changeState }) {
             {enjoymentObj.emotionProps.text_description}
           </p>
           <DemoBtn
-           toggleValue={demoToggle}
-           setToggleValue={changeState}
+           toggleValue={enjoyment}
+           setToggleValue={setEnjoyment}
            style={{
             position: "absolute",
             right: "0",
