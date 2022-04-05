@@ -14,6 +14,12 @@ export default function SadnessSection({ fromIfStatement }) {
 
   const[sadness, setSadness] = useState(false)
 
+  // if(sadness) {
+  //   return (
+  //     <GiTornado size="5em" style={{position: "absolute", top: "300px"}}/>
+  //   )
+  // }
+
   return (
     <>
       <section 
@@ -26,7 +32,7 @@ export default function SadnessSection({ fromIfStatement }) {
           >
             {sadObj.title}
           </h1>
-          <GiTornado size="5em"/>
+          {/* <GiTornado size="5em"/> */}
         <p
           style={{
             width: "30em",
@@ -34,6 +40,9 @@ export default function SadnessSection({ fromIfStatement }) {
             top: "8em"}}>
           {sadObj.emotionProps.text_description}
         </p>
+        {sadness ? (
+          <GiTornado size="5em" style={{position: "absolute", top: "300px"}}/>
+        ) : null}
         <DemoBtn
          toggleValue={sadness}
          setToggleValue={setSadness}
