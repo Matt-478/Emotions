@@ -1,5 +1,6 @@
 import React from 'react'
 import { data } from '../data'
+import '../styling/welcomeStyle.css'
 
 export default function EnjoymentSection ({ demoToggle }) {
 
@@ -13,7 +14,7 @@ export default function EnjoymentSection ({ demoToggle }) {
     return (
       <>
         <section 
-          className={"p-relative"}
+          className={"p-relative video-box"}
           id={welcomeObj.title}
         >
           <h1 
