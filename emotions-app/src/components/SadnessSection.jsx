@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { data } from '../data'
 import DemoBtn from './DemoBtn'
 
-export default function SadnessSection({ demoToggle, changeState, fromIfStatement }) {
+export default function SadnessSection({ fromIfStatement }) {
 
   let sadObj = data.find((obj) => {
     if(obj.title === "Sadness") {
@@ -10,6 +10,8 @@ export default function SadnessSection({ demoToggle, changeState, fromIfStatemen
     }
   })
   // console.log(sadObj)
+
+  const[sadness, setSadness] = useState(false)
 
   return (
     <>
@@ -19,15 +21,10 @@ export default function SadnessSection({ demoToggle, changeState, fromIfStatemen
         >
           <h1 
           className={"allFontsProps emotionTitle"}
-          style={{fontFamily: demoToggle ? sadObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
+          style={{fontFamily: sadness ? sadObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
           >
             {sadObj.title}
           </h1>
-          {
-            fromIfStatement &&  (
-              <h2>IT IS TRUE</h2>
-            )
-          }
         <p
           style={{
             width: "30em",
@@ -36,8 +33,8 @@ export default function SadnessSection({ demoToggle, changeState, fromIfStatemen
           {sadObj.emotionProps.text_description}
         </p>
         <DemoBtn
-         toggleValue={demoToggle}
-         setToggleValue={changeState}
+         toggleValue={sadness}
+         setToggleValue={setSadness}
          style={{
           position: "absolute",
           right: "0",

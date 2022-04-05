@@ -15,6 +15,12 @@ import FearSection from './components/FearSection'
 function App() {
   const[demoToggle, setDemoToggle] = useState(false)
 
+  // states for each emotion
+  const[welcome, setWelcome] = useState(false)
+  const[enjoyment, setEnjoyment] = useState(false)
+  const[sadness, setSadness] = useState(false)
+  const[fear, setFear] = useState(false)
+
   useEffect(() => {
     console.log("----------------------------")
   }, [])
@@ -24,8 +30,11 @@ function App() {
     <>
       <main>
         <WelcomeSection demoToggle={demoToggle} />
-        <SadnessSection id={"Sadness"} demoToggle={demoToggle} changeState={setDemoToggle}/>
-        <FearSection id={"Fear"} demoToggle={demoToggle} changeState={setDemoToggle}/>
+        <SadnessSection id={"Sadness"}
+          // sadness={sadness}
+          // changeSadness={setSadness}
+          />
+        <FearSection id={"Fear"} fear={fear} changeFear={setFear}/>
         <EnjoymentSection id={"Enjoyment"} demoToggle={demoToggle} changeState={setDemoToggle}/>
       </main>
     </>
