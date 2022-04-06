@@ -26,22 +26,9 @@ export default function SadnessSection({ fromIfStatement }) {
         className={"p-relative"}
         id={sadObj.title}
         >
-          <h1 
-          className={"allFontsProps emotionTitle"}
-          style={{fontFamily: sadness ? sadObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
-          >
-            {sadObj.title}
-          </h1>
-          {/* <GiTornado size="5em"/> */}
-        <p
-          style={{
-            width: "30em",
-            position: "absolute",
-            top: "8em"}}>
-          {sadObj.emotionProps.text_description}
-        </p>
 
-        {sadness ? (
+        {
+        sadness ? (
           <>
             {/* <GiTornado size="5em" style={{position: "absolute", top: "300px"}}/> */}
             <svg width="595" height="842" viewBox="0 0 595 842" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +43,32 @@ export default function SadnessSection({ fromIfStatement }) {
             </g>
           </svg>
         </>
-        ) : null}
+        ) : (
+          <>
+            <h1 
+              className={"allFontsProps emotionTitle"}
+              style={{fontFamily: sadness ? sadObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
+            >
+              {sadObj.title}
+            </h1>
+            <p
+              style={{
+                width: "30em",
+                position: "absolute",
+                top: "8em"}}>
+              {sadObj.emotionProps.text_description}
+            </p>
+            <DemoBtn
+             toggleValue={sadness}
+             setToggleValue={setSadness}
+             style={{
+              position: "absolute",
+              right: "0",
+              bottom: "5em"}}
+             />
+          </>
+        )
+        }
 
         <DemoBtn
          toggleValue={sadness}
