@@ -35,11 +35,11 @@ export default function SadnessSection({ fromIfStatement }) {
           className={"p-relative bg-sad"}
           id={sadObj.title}
           >
-           <svg width="75" height="260" viewBox="0 0 75 260" fill="none"  xmlns="http://www.w3.org/2000/svg">
+           <svg width="75" height="257" viewBox="0 0 75 257" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="candle-1">
-              <path d="M38.5 54C37.8618 54.0851 37.178 54.1514 36.464 54.1925M36.464 54.1925C28.7862 54.635 19.5676 51.7704 22 39C24 28.5 33.0001 27.6326 37.5001 23.5C42.9445 18.5 46.5 19 46.5 3C56.5001 15 51.5001 23.8982 51.5001 35C51.5001 48 46.5 53 36.464 54.1925Z" stroke="#C4C4C4" stroke-width="2"/>
-              <path d="M37 73V40" stroke="black" stroke-width="5"/>
-              <rect id="candle-body" y="65" width="75" height="195" fill="#C4C4C4"/>
+              <path id="candle-1-flame" d="M37.5001 20.5C33.0001 24.6326 24 25.5 22 36C19.5676 48.7704 28.7862 51.635 36.464 51.1925C46.5 50 51.5001 45 51.5001 32C51.5001 20.8982 56.5001 12 46.5 0C46.5 16 42.9445 15.5 37.5001 20.5Z" fill="#DE3F3F"/>
+              <path d="M37 70V37" stroke="black" stroke-width="5"/>
+              <rect y="62" width="75" height="195" fill="#C4C4C4"/>
             </g>
            </svg>
           </section>

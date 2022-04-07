@@ -4,12 +4,39 @@ svg {
 }
 
 .bg-sad {
-  background-color: rgb(59, 55, 55);
+  background-color: rgb(31, 27, 27);
   transition: background 2s 0.5s ;
 }
 
 #candle-1 {
   animation: candleMelt 1.3s ease infinite;
+  animation-delay: 4s;
+}
+
+#candle-1-flame {
+  animation: flameFlicker 1s ease infinite;
+  animation-delay: 4s;
+}
+
+@keyframes flameFlicker {
+  0% {
+
+  }
+  25% {
+    transform: skewY(25deg);
+    transform: skewX(45deg);
+    transform: scale(1.2, 1.3);
+  }
+  50% {
+
+  }
+  75% {
+    transform: rotateX(180deg);
+    transform-origin: center;
+  }
+  100% {
+    
+  }
 }
 
 @keyframes candleMelt{
@@ -19,6 +46,5 @@ svg {
   }
   to {
     transform: translateY(120px);
-    background-color: darkgoldenrod;
   }
 }
