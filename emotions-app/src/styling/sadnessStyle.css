@@ -1,6 +1,7 @@
 svg {
   position: absolute;
   top: 250px;
+  left: 200px;
 }
 
 .bg-sad {
@@ -9,33 +10,40 @@ svg {
 }
 
 #candle-1 {
-  animation: candleMelt 1.3s ease infinite;
+  animation: candleMelt 2s ease infinite;
   animation-delay: 4s;
 }
 
 #candle-1-flame {
-  animation: flameFlicker 1s ease infinite;
-  animation-delay: 4s;
+  animation: flameFlicker 0.9s ease infinite;
+  animation-delay: 0.3s;
 }
 
 @keyframes flameFlicker {
   0% {
-
+    transform: rotateX(15deg)
   }
   25% {
-    transform: skewY(25deg);
-    transform: skewX(45deg);
-    transform: scale(1.2, 1.3);
+    transform: rotateX(5deg);
+    transform: skewY(10deg);
+    transform: skewX(1deg);
+    /* transform: scale(0.8, 0.9);  */
   }
   50% {
-
+    transform: rotate(10deg);
+    transform: rotateX(15deg);
   }
   75% {
-    transform: rotateX(180deg);
+    transform: rotateY(15deg);
     transform-origin: center;
+    transform: rotateX(5deg);
+    transform: skewX(1deg);
   }
   100% {
-    
+    /* transform: rotateX(5deg);
+    transform: skewY(5deg); */
+    /* transform: skewX(5deg); */
+    transform: rotateX(15deg)
   }
 }
 
