@@ -3,9 +3,10 @@ svg {
   top: 250px;
 }
 
-/* #candle-body {
-  animation: candleMelt 1.3s ease infinite;
-} */
+.bg-sad {
+  background-color: rgb(59, 55, 55);
+  transition: background 2s 0.5s ;
+}
 
 #candle-1 {
   animation: candleMelt 1.3s ease infinite;
