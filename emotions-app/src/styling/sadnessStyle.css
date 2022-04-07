@@ -1,0 +1,23 @@
+svg {
+  position: absolute;
+  top: 250px;
+}
+
+/* #candle-body {
+  animation: candleMelt 1.3s ease infinite;
+} */
+
+#candle-1 {
+  animation: candleMelt 1.3s ease infinite;
+}
+
+@keyframes candleMelt{
+  from {
+    transform: translateY(0px);
+    background-color: cornsilk;
+  }
+  to {
+    transform: translateY(120px);
+    background-color: darkgoldenrod;
+  }
+}

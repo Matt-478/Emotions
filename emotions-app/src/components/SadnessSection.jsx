@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { data } from '../data'
 import DemoBtn from './DemoBtn'
-import { GiTornado } from 'react-icons/gi';
+
+import '../styling/sadnessStyle.css'
 
 export default function SadnessSection({ fromIfStatement }) {
 
@@ -27,21 +28,17 @@ export default function SadnessSection({ fromIfStatement }) {
         id={sadObj.title}
         >
 
-        {
+        { /* conditional render */
         sadness ? (
           <>
-            {/* <GiTornado size="5em" style={{position: "absolute", top: "300px"}}/> */}
-            <svg width="595" height="842" viewBox="0 0 595 842" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="A4 - 1">
-              <g id="flame">
-                <path id="Vector 2" d="M72.5 82C71.8618 82.0851 71.178 82.1514 70.464 82.1925M70.464 82.1925C62.7862 82.635 53.5676 79.7704 56 67C58 56.5 67.0001 55.6326 71.5001 51.5C76.9445 46.5 80.5 47 80.5 31C90.5001 43 85.5001 51.8982 85.5001 63C85.5001 76 80.5 81 70.464 82.1925Z" stroke="#C4C4C4" stroke-width="2"/>
-              </g>
-              <g id="Candle body">
-                <path id="Vector 1" d="M71 101V68" stroke="black" strokeWidth="5"/>
-                <rect id="Rectangle 1" x="34" y="93" width="75" height="195" fill="#C4C4C4"/>
-              </g>
+          <svg width="75" height="260" viewBox="0 0 75 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="candle-1">
+              <path d="M38.5 54C37.8618 54.0851 37.178 54.1514 36.464 54.1925M36.464 54.1925C28.7862 54.635 19.5676 51.7704 22 39C24 28.5 33.0001 27.6326 37.5001 23.5C42.9445 18.5 46.5 19 46.5 3C56.5001 15 51.5001 23.8982 51.5001 35C51.5001 48 46.5 53 36.464 54.1925Z" stroke="#C4C4C4" stroke-width="2"/>
+              <path d="M37 73V40" stroke="black" stroke-width="5"/>
+              <rect y="65" width="75" height="195" fill="#C4C4C4"/>
             </g>
           </svg>
+
         </>
         ) : (
           <>
