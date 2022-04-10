@@ -10,6 +10,12 @@ svg:nth-child(2) {
   left: 300px;
 }
 
+svg:nth-child(3) {
+  position: absolute;
+  top: 280px;
+  left: 420px;
+}
+
 .bg-sad {
   background-color: rgb(31, 27, 27);
   transition: background 2s 0.5s ;
