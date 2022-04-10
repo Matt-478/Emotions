@@ -1,7 +1,13 @@
-svg {
+svg:first-child {
   position: absolute;
   top: 250px;
   left: 200px;
+}
+
+svg:nth-child(2) {
+  position: absolute;
+  top: 285px;
+  left: 300px;
 }
 
 .bg-sad {
@@ -10,7 +16,7 @@ svg {
 }
 
 #candle-1 {
-  animation: candleMelt 2s ease infinite;
+  animation: candleMelt 2s ease ;
   animation-delay: 4s;
 }
 
