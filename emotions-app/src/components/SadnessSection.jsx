@@ -64,6 +64,15 @@ export default function SadnessSection({ fromIfStatement }) {
             <path d="M28 78.0001V45.0001" stroke="black" stroke-width="5"/>
             <rect y="58.0001" width="56" height="195" fill="#C4C4C4"/>
           </svg>
+          
+          {/* fifth candle */}
+          <svg width="86" height="224" viewBox="0 0 86 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40.1316 23C35.6316 27.1327 32.1317 25.5 28.533 32.5C22.5891 44.0616 35.3191 48.135 42.9969 47.6925C53.033 46.5 58.033 37.5 58.033 28.5C58.033 11.3075 51.783 11 58.033 0C45.533 4.50003 45.5761 18 40.1316 23Z" fill="#CE2424"/>
+            <path d="M43 66.3547V37" stroke="black" stroke-width="5"/>
+            <rect y="60.9186" width="86" height="163.081" fill="#C4C4C4"/>
+          </svg>
+
+
           </section>
           </>
         ) : (
