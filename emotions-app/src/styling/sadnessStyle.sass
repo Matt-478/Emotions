@@ -1,0 +1,72 @@
+svg:first-child 
+  position: absolute
+  top: 250px
+  left: 200px
+
+svg:nth-child(2) 
+  position: absolute
+  top: 285px
+  left: 300px
+
+svg:nth-child(3) 
+  position: absolute
+  top: 280px
+  left: 420px
+
+
+svg:nth-child(4) 
+  position: absolute
+  top: 255px
+  left: 540px
+
+svg:nth-child(5) 
+  position: absolute
+  top: 285px
+  left: 640px
+
+.bg-sad 
+  background-color: rgb(31, 27, 27)
+  transition: background 2s 0.5s 
+
+#candle-1 
+  animation: candleMelt 2s ease 
+  animation-delay: 4s
+
+#candle-1-flame 
+  animation: flameFlicker 0.9s ease infinite
+  animation-delay: 0.3s
+
+
+@keyframes flameFlicker 
+  0% 
+    transform: rotateX(15deg)
+  
+  25% 
+    transform: rotateX(5deg)
+    transform: skewY(10deg)
+    transform: skewX(1deg)
+    /* transform: scale(0.8, 0.9);  */
+  
+  50% 
+    transform: rotate(10deg)
+    transform: rotateX(15deg)
+  
+  75% 
+    transform: rotateY(15deg)
+    transform-origin: center
+    transform: rotateX(5deg)
+    transform: skewX(1deg)
+  
+  100% 
+    /* transform: rotateX(5deg); */
+    transform: skewY(5deg) 
+    /* transform: skewX(5deg); */
+    transform: rotateX(15deg)
+
+@keyframes candleMelt
+  from 
+    transform: translateY(0px)
+    background-color: cornsilk
+  
+  to 
+    transform: translateY(120px)

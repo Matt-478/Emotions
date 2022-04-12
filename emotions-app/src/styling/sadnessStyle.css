@@ -29,54 +29,126 @@ svg:nth-child(5) {
 }
 
 .bg-sad {
-  background-color: rgb(31, 27, 27);
-  transition: background 2s 0.5s ;
+  background-color: #1f1b1b;
+  -webkit-transition: background 2s 0.5s;
+  transition: background 2s 0.5s;
 }
 
 #candle-1 {
-  animation: candleMelt 2s ease ;
-  animation-delay: 4s;
+  -webkit-animation: candleMelt 2s ease;
+          animation: candleMelt 2s ease;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 #candle-1-flame {
-  animation: flameFlicker 0.9s ease infinite;
-  animation-delay: 0.3s;
+  -webkit-animation: flameFlicker 0.9s ease infinite;
+          animation: flameFlicker 0.9s ease infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes flameFlicker {
+  0% {
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+  }
+  25% {
+    -webkit-transform: rotateX(5deg);
+            transform: rotateX(5deg);
+    -webkit-transform: skewY(10deg);
+            transform: skewY(10deg);
+    -webkit-transform: skewX(1deg);
+            transform: skewX(1deg);
+    /* transform: scale(0.8, 0.9);  */
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+  }
+  75% {
+    -webkit-transform: rotateY(15deg);
+            transform: rotateY(15deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotateX(5deg);
+            transform: rotateX(5deg);
+    -webkit-transform: skewX(1deg);
+            transform: skewX(1deg);
+  }
+  100% {
+    /* transform: rotateX(5deg); */
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
+    /* transform: skewX(5deg); */
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+  }
 }
 
 @keyframes flameFlicker {
   0% {
-    transform: rotateX(15deg)
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
   }
   25% {
-    transform: rotateX(5deg);
-    transform: skewY(10deg);
-    transform: skewX(1deg);
+    -webkit-transform: rotateX(5deg);
+            transform: rotateX(5deg);
+    -webkit-transform: skewY(10deg);
+            transform: skewY(10deg);
+    -webkit-transform: skewX(1deg);
+            transform: skewX(1deg);
     /* transform: scale(0.8, 0.9);  */
   }
   50% {
-    transform: rotate(10deg);
-    transform: rotateX(15deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
   }
   75% {
-    transform: rotateY(15deg);
-    transform-origin: center;
-    transform: rotateX(5deg);
-    transform: skewX(1deg);
+    -webkit-transform: rotateY(15deg);
+            transform: rotateY(15deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotateX(5deg);
+            transform: rotateX(5deg);
+    -webkit-transform: skewX(1deg);
+            transform: skewX(1deg);
   }
   100% {
-    /* transform: rotateX(5deg);
-    transform: skewY(5deg); */
+    /* transform: rotateX(5deg); */
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
     /* transform: skewX(5deg); */
-    transform: rotateX(15deg)
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
   }
 }
 
-@keyframes candleMelt{
+@-webkit-keyframes candleMelt {
   from {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     background-color: cornsilk;
   }
   to {
-    transform: translateY(120px);
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
   }
 }
+
+@keyframes candleMelt {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    background-color: cornsilk;
+  }
+  to {
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
+  }
+}
+/*# sourceMappingURL=sadnessStyle.css.map */
