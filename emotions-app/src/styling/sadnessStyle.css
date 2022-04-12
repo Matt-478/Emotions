@@ -215,6 +215,8 @@ svg:nth-child(5) {
   0% {
     -webkit-transform: rotateX(2deg);
             transform: rotateX(2deg);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   25% {
     -webkit-transform: skewX(3deg);
@@ -233,6 +235,8 @@ svg:nth-child(5) {
             transform: rotateX(2deg);
     -webkit-transform: skewY(1deg);
             transform: skewY(1deg);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
   }
 }
 
@@ -240,6 +244,8 @@ svg:nth-child(5) {
   0% {
     -webkit-transform: rotateX(2deg);
             transform: rotateX(2deg);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   25% {
     -webkit-transform: skewX(3deg);
@@ -258,6 +264,8 @@ svg:nth-child(5) {
             transform: rotateX(2deg);
     -webkit-transform: skewY(1deg);
             transform: skewY(1deg);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
   }
 }
 
