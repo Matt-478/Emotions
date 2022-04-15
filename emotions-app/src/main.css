@@ -69,7 +69,8 @@ body h1, body h2, body h3 {
 }
 
 body p {
-  font-family: JaneAusten;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
   font-size: 1.7em;
 }
 
