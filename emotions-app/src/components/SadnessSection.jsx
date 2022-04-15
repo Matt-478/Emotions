@@ -83,7 +83,7 @@ export default function SadnessSection({ fromIfStatement }) {
           >
             <h1 
               className={"allFontsProps emotionTitle"}
-              style={{fontFamily: sadness ? sadObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
+              style={{fontFamily: sadObj.emotionProps.realFontFamily}}
             >
               {sadObj.title}
             </h1>
