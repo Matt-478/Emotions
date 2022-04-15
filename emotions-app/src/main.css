@@ -24,7 +24,7 @@ body .p-relative {
 
 @font-face {
   body {
-    font-family: Aarcover;
+    font-family: "Aarcover";
     src: url("./fonts/AarcoverRegular-ZV9l.ttf");
     font-style: normal;
   }
