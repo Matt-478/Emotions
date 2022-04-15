@@ -40,9 +40,12 @@ svg:nth-child(5)
   animation-delay: 0.3s
 
 #candle-3-flame
-    animation: flameFlickerTHREE 1.1s ease infinite
-    animation-delay: 0.3s
+  animation: flameFlickerTHREE 1.1s ease infinite
+  animation-delay: 0.3s
 
+#candle-4-flame
+  animation: flameFlickerFOUR 0.6s ease infinite
+  animation-delay: 0.3s
 
 @keyframes flameFlickerONE
   0% 
@@ -113,6 +116,14 @@ svg:nth-child(5)
     transform: skewY(1deg)
     transform: translateY(-3px)
      
+@keyframes flameFlickerFOUR
+  0%
+    transform:rotateY(1deg)
+  50%
+    transform: skewX(2deg)
+  100%
+    transform: skewX(-1deg)
+    
 
 @keyframes candleMelt
   from 
