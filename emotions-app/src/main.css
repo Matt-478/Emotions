@@ -54,6 +54,12 @@ body .p-relative {
   }
 }
 
+body .eFont {
+  font-family: JaneAusten;
+  src: url("./fonts/Janeausten-rpRp.ttf");
+  font-style: normal;
+}
+
 @font-face {
   body {
     font-family: Fresnel;

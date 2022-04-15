@@ -20,8 +20,8 @@ export default function EnjoymentSection ({ demoToggle, changeState }) {
           id={enjoymentObj.title}
         >
           <h1 
-            className={"allFontsProps emotionTitle"}
-            style={{fontFamily: enjoyment ? enjoymentObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
+            className={"allFontsProps emotionTitle eFont"}
+            style={{fontFamily: enjoymentObj.emotionProps.realFontFamily}}
           >
             {enjoymentObj.title}
           </h1>

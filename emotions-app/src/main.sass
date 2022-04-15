@@ -22,14 +22,6 @@ body
   .p-relative
     position: relative
 
-
-  // MIXINS _________________________________________________________________________________________________________________________________________
-  @mixin forFontToChange($emotionFontFamily)
-    font-family: $emotionFontFamily
-    font-size: $headlineSize + 2em
-    cursor: default
-    position: absolute
-
   
   // FONT FACES _________________________________________________________________________________________________________________________________________
   // ANGER
@@ -54,6 +46,11 @@ body
 
   // ENJOYMENT
   @font-face 
+    font-family: JaneAusten
+    src: url("./fonts/Janeausten-rpRp.ttf")
+    font-style: normal
+  
+  .eFont 
     font-family: JaneAusten
     src: url("./fonts/Janeausten-rpRp.ttf")
     font-style: normal

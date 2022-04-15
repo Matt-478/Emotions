@@ -21,7 +21,7 @@ export default function FearSection({ demoToggle }) {
         >
           <h1 
           className={"allFontsProps emotionTitle"}
-          style={{fontFamily: fear ? fearObj.emotionProps.realFontFamily : 'Roboto Condensed'}}
+          style={{fontFamily: fearObj.emotionProps.realFontFamily}}
           >
             {fearObj.title}
           </h1>
