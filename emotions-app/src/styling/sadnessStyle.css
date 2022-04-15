@@ -1,31 +1,26 @@
-svg:first-child {
-  position: absolute;
-  top: 250px;
-  left: 200px;
+section .centered-candles svg {
+  display: inline-block;
+  position: relative;
 }
 
-svg:nth-child(2) {
-  position: absolute;
-  top: 285px;
-  left: 300px;
+section .centered-candles svg:first-child {
+  right: 30px;
 }
 
-svg:nth-child(3) {
-  position: absolute;
-  top: 280px;
-  left: 420px;
+section .centered-candles svg:nth-child(2) {
+  right: -15px;
 }
 
-svg:nth-child(4) {
-  position: absolute;
-  top: 255px;
-  left: 540px;
+section .centered-candles svg:nth-child(3) {
+  right: -30px;
 }
 
-svg:nth-child(5) {
-  position: absolute;
-  top: 285px;
-  left: 640px;
+section .centered-candles svg:nth-child(4) {
+  right: -60px;
+}
+
+section .centered-candles svg:nth-child(5) {
+  right: -75px;
 }
 
 .bg-sad {

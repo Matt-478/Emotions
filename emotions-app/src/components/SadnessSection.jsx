@@ -35,8 +35,10 @@ export default function SadnessSection({ fromIfStatement }) {
           className={"p-relative bg-sad"}
           id={sadObj.title}
           >
-            {/* first candle */}
-           <svg width="75" height="257" viewBox="0 0 75 257" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="centered-candles">
+
+          {/* first candle */}
+            <svg width="75" height="257" viewBox="0 0 75 257" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="candle-1">
               <path id="candle-1-flame" d="M37.5001 20.5C33.0001 24.6326 24 25.5 22 36C19.5676 48.7704 28.7862 51.635 36.464 51.1925C46.5 50 51.5001 45 51.5001 32C51.5001 20.8982 56.5001 12 46.5 0C46.5 16 42.9445 15.5 37.5001 20.5Z" fill="#DE3F3F"/>
               <path d="M37 70V37" stroke="black" stroke-width="5"/>
@@ -52,29 +54,29 @@ export default function SadnessSection({ fromIfStatement }) {
             </svg>
 
           {/* third candle */}
-          <svg width="86" height="227" viewBox="0 0 86 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="86" height="227" viewBox="0 0 86 227" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path id="candle-3-flame" d="M56.5 13.5C58.1 6.3 47.5551 0 41.5551 0C54 8.5 46.5 16 41.5551 19C32.3469 24.5865 27.6998 26.8936 25.0551 30.5C19.5551 38 21.0551 47 33.0551 51C45.0551 55 51.7694 47.5 53.0551 43C54.3408 38.5 50.5551 33.4083 50.5551 28C50.5551 22.5917 54.5 22.5 56.5 13.5Z" fill="#DE6F3F"/>
             <path d="M43 69.3547V40" stroke="black" stroke-width="5"/>
             <rect y="63.9186" width="86" height="163.081" fill="#C4C4C4"/>
           </svg>
 
           {/* fourth candle */}
-          <svg width="56" height="253" viewBox="0 0 56 253" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="56" height="253" viewBox="0 0 56 253" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path id="candle-4-flame" d="M28.1161 21.4852C31.3171 25.9261 38.4248 27.4779 39.0209 38.0355C39.7459 50.8758 32.1076 53.005 26.0157 51.9759C18.1112 50.0222 12.5 44 20 31.5C25.22 22.8001 15.5845 13.3024 21.04 3.19904C21.5092 2.3301 22.6772 2.77565 22.6127 3.76107C21.7902 16.3321 24.5315 16.5119 28.1161 21.4852Z" fill="#DE8B3F"/>
             <path d="M28 78.0001V45.0001" stroke="black" stroke-width="5"/>
             <rect y="58.0001" width="56" height="195" fill="#C4C4C4"/>
           </svg>
           
           {/* fifth candle */}
-          <svg width="86" height="220" viewBox="0 0 86 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="86" height="220" viewBox="0 0 86 220" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path id="candle-5-flame" d="M36.7877 26.3225C33.2861 31.3293 29.5162 30.4908 27.5137 38.1026C24.2062 50.6748 37.5154 51.9037 44.9166 49.814C54.4585 46.4828 57.3974 36.6156 55.4543 27.8278C51.7424 11.0408 45.5734 12.09 49.3011 0C38.0674 7.09269 41.0242 20.265 36.7877 26.3225Z" fill="#CE2424"/>
             <path d="M43 62.3547V33" stroke="black" stroke-width="5"/>
             <rect y="56.9186" width="86" height="163.081" fill="#C4C4C4"/>
           </svg>
-
-
-          </section>
-          </>
+          
+          </div>
+        </section>
+        </>
         ) : (
           <>
           <section 

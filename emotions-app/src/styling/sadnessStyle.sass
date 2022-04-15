@@ -1,36 +1,45 @@
-svg:first-child 
-  position: absolute
-  top: 250px
-  left: 200px
+.centered-candles
+  // display: flex
+  
+section .centered-candles svg 
+  display: inline-block
+  position: relative
 
-svg:nth-child(2) 
-  position: absolute
-  top: 285px
-  left: 300px
+  &:first-child 
+    // top: 250px
+    // left: 200px
+    right: 30px
+  
+  &:nth-child(2) 
+    // top: 285px
+    // left: 300px
+    right: -15px
+  
+  &:nth-child(3) 
+    // top: 280px
+    // left: 420px
+    right: -30px
+  
+  &:nth-child(4) 
+    // top: 255px
+    // left: 540px
+    right: -60px
 
-svg:nth-child(3) 
-  position: absolute
-  top: 280px
-  left: 420px
-
-svg:nth-child(4) 
-  position: absolute
-  top: 255px
-  left: 540px
-
-svg:nth-child(5) 
-  position: absolute
-  top: 285px
-  left: 640px
+  &:nth-child(5) 
+    // top: 285px
+    // left: 640px
+    right: -75px
 
 .bg-sad 
   background-color: rgb(31, 27, 27)
   transition: background 1.5s 0.5s 
 
+// Candle Melt Animations // Candle Melt Animations // Candle Melt Animations // Candle Melt Animations
 // #candle-1 
 //   animation: candleMelt 2s ease 
 //   animation-delay: 4s
 
+// Flame Animations // Flame Animations // Flame Animations // Flame Animations
 #candle-1-flame 
   animation: flameFlickerONE 0.9s ease infinite
   animation-delay: 1s
