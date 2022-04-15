@@ -34,6 +34,8 @@ section .centered-candles svg:nth-child(5) {
           animation: candleMelt 2s ease;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #candle-2 {
@@ -41,13 +43,17 @@ section .centered-candles svg:nth-child(5) {
           animation: candleMeltTWO 2.8s ease;
   -webkit-animation-delay: 3.8s;
           animation-delay: 3.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #candle-3 {
   -webkit-animation: candleMeltTWO 2s ease;
           animation: candleMeltTWO 2s ease;
-  -webkit-animation-delay: 4.2s;
-          animation-delay: 4.2s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #candle-4 {
@@ -55,6 +61,8 @@ section .centered-candles svg:nth-child(5) {
           animation: candleMelt 1.6s ease;
   -webkit-animation-delay: 4.2s;
           animation-delay: 4.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #candle-5 {
@@ -62,6 +70,8 @@ section .centered-candles svg:nth-child(5) {
           animation: candleMeltTWO 2.8s ease;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #candle-1-flame {
