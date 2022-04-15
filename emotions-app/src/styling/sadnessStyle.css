@@ -29,6 +29,41 @@ section .centered-candles svg:nth-child(5) {
   transition: background 1.5s 0.5s;
 }
 
+#candle-1 {
+  -webkit-animation: candleMelt 2s ease;
+          animation: candleMelt 2s ease;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+#candle-2 {
+  -webkit-animation: candleMeltTWO 2.8s ease;
+          animation: candleMeltTWO 2.8s ease;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+#candle-3 {
+  -webkit-animation: candleMeltTWO 2s ease;
+          animation: candleMeltTWO 2s ease;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+#candle-4 {
+  -webkit-animation: candleMelt 1.6s ease;
+          animation: candleMelt 1.6s ease;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+#candle-5 {
+  -webkit-animation: candleMeltTWO 2.8s ease;
+          animation: candleMeltTWO 2.8s ease;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
 #candle-1-flame {
   -webkit-animation: flameFlickerONE 0.9s ease infinite;
           animation: flameFlickerONE 0.9s ease infinite;
@@ -390,6 +425,28 @@ section .centered-candles svg:nth-child(5) {
 }
 
 @keyframes candleMelt {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
+  }
+}
+
+@-webkit-keyframes candleMeltTWO {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
+  }
+}
+
+@keyframes candleMeltTWO {
   from {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);

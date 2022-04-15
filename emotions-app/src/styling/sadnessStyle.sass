@@ -35,9 +35,26 @@ section .centered-candles svg
   transition: background 1.5s 0.5s 
 
 // Candle Melt Animations // Candle Melt Animations // Candle Melt Animations // Candle Melt Animations
-// #candle-1 
-//   animation: candleMelt 2s ease 
-//   animation-delay: 4s
+#candle-1 
+  animation: candleMelt 2s ease 
+  animation-delay: 4s
+
+#candle-2
+  animation: candleMeltTWO 2.8s ease
+  animation-delay: 3.8s
+
+#candle-3
+  animation: candleMeltTWO 2s ease
+  animation-delay: 4.2s
+
+#candle-4
+  animation: candleMelt 1.6s ease
+  animation-delay: 4.2s
+
+#candle-5
+  animation: candleMeltTWO 2.8s ease
+  animation-delay: 4s
+
 
 // Flame Animations // Flame Animations // Flame Animations // Flame Animations
 #candle-1-flame 
@@ -162,6 +179,13 @@ section .centered-candles svg
        
 
 @keyframes candleMelt
+  from 
+    transform: translateY(0px)
+  
+  to 
+    transform: translateY(120px)
+
+@keyframes candleMeltTWO
   from 
     transform: translateY(0px)
   
