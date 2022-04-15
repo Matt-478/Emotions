@@ -1,3 +1,4 @@
+// import src from '*.avif'
 import React, { useState } from 'react'
 import { data } from '../data'
 import DemoBtn from './DemoBtn'
@@ -22,6 +23,7 @@ export default function FearSection({ demoToggle }) {
           <h1 
           className={"allFontsProps emotionTitle"}
           style={{fontFamily: fearObj.emotionProps.realFontFamily}}
+          style={{fontFamily: "Tupo Vyaz"}}
           >
             {fearObj.title}
           </h1>

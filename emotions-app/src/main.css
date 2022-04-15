@@ -24,7 +24,7 @@ body .p-relative {
 
 @font-face {
   body {
-    font-family: "Aarcover";
+    font-family: Aarcover;
     src: url("./fonts/AarcoverRegular-ZV9l.ttf");
     font-style: normal;
   }
@@ -33,7 +33,7 @@ body .p-relative {
 @font-face {
   body {
     font-family: Tupo Vyaz;
-    src: url("./fonts/Tupo-Vyaz_Thin.ttf");
+    src: url("./fonts/Tupo-Vyaz_Thin.ttf") format("truetype");
     font-style: thin;
   }
 }
@@ -52,12 +52,6 @@ body .p-relative {
     src: url("./fonts/Janeausten-rpRp.ttf");
     font-style: normal;
   }
-}
-
-body .eFont {
-  font-family: JaneAusten;
-  src: url("./fonts/Janeausten-rpRp.ttf");
-  font-style: normal;
 }
 
 @font-face {
