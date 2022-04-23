@@ -4,23 +4,27 @@ section .centered-candles svg {
 }
 
 section .centered-candles svg:first-child {
-  right: 30px;
+  left: 50px;
 }
 
 section .centered-candles svg:nth-child(2) {
-  right: -15px;
+  left: 60px;
 }
 
 section .centered-candles svg:nth-child(3) {
-  right: -30px;
+  left: 90px;
 }
 
 section .centered-candles svg:nth-child(4) {
-  right: -60px;
+  left: 110px;
 }
 
 section .centered-candles svg:nth-child(5) {
-  right: -75px;
+  left: 150px;
+}
+
+section .centered-candles svg:nth-child(6) {
+  top: -70px;
 }
 
 .bg-sad {
@@ -72,6 +76,13 @@ section .centered-candles svg:nth-child(5) {
           animation-delay: 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+#wax-drip {
+  -webkit-animation: wax-melt 2.5s ease;
+          animation: wax-melt 2.5s ease;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 #candle-1-flame {
