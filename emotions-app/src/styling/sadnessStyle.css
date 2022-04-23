@@ -24,7 +24,8 @@ section .centered-candles svg:nth-child(5) {
 }
 
 section .centered-candles svg:nth-child(6) {
-  top: -70px;
+  top: -90px;
+  left: 3.4vw;
 }
 
 .bg-sad {
@@ -473,6 +474,28 @@ section .centered-candles svg:nth-child(6) {
             transform: translateY(0px);
   }
   to {
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
+  }
+}
+
+@-webkit-keyframes wax-drip {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
+  }
+}
+
+@keyframes wax-drip {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
     -webkit-transform: translateY(120px);
             transform: translateY(120px);
   }
