@@ -209,3 +209,21 @@ section .centered-candles svg
     transform:  translateY(0px)
   100%
     transform: translateY(120px)
+
+@media screen and ( max-width: 480px )
+  main section
+    // height: fit-content
+    height: 100vh
+    width: auto
+    .section-text
+      max-width: 70vw
+      width: fit-content
+
+  // .centered-candles
+
+
+@media screen and ( min-width: 1201px)
+  main section 
+    padding: 0 5em 0 5em
+    .section-text
+      width: 45em !important

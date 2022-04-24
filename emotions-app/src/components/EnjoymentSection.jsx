@@ -29,7 +29,8 @@ export default function EnjoymentSection ({ demoToggle, changeState }) {
             style={{
               width: "30em",
               position: "absolute",
-              top: "8em"}}>
+              top: "8em"}}
+            className="section-text">
             {enjoymentObj.emotionProps.text_description}
           </p>
           <DemoBtn

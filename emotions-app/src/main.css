@@ -94,16 +94,6 @@ body main section {
   scroll-snap-align: start;
 }
 
-body main section:first-child h1 {
-  font-size: 12em;
-}
-
-body main section:first-child h1 .allFontsProps {
-  font-size: 8em;
-  cursor: default;
-  position: absolute;
-}
-
 body main .emotionTitle {
   position: absolute;
   top: 0.5em;

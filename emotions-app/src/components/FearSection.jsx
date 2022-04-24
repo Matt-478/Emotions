@@ -29,7 +29,8 @@ export default function FearSection({ demoToggle }) {
           style={{
             width: "30em",
             position: "absolute",
-            top: "8em"}}>
+            top: "8em"}}
+          className="section-text">
           {fearObj.emotionProps.text_description}
         </p>
         <DemoBtn
