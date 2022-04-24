@@ -131,9 +131,7 @@ body main .emotionTitle {
 
 @media screen and (min-width: 1025px) {
   main section {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 50vw;
     padding: 0 5em 0 5em;
     min-width: 35em;
     max-width: 45em;
