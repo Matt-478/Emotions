@@ -210,6 +210,7 @@ section .centered-candles svg
   100%
     transform: translateY(120px)
 
+// small screens - phones poortrait
 @media screen and ( max-width: 480px )
   main section
     // height: fit-content
@@ -222,6 +223,15 @@ section .centered-candles svg
   // .centered-candles
 
 
+// large screens
+  // READ BEFORE CONTINUING!  
+  // for whatever reqason the media query for large screen is working but not for regular large - figure that out
+@media screen and (max-width: 1200px)
+  main section .section-text
+    width: 35em !important
+  
+
+// extra-large screens
 @media screen and ( min-width: 1201px)
   main section 
     padding: 0 5em 0 5em
