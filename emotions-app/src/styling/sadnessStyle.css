@@ -519,7 +519,8 @@ section .centered-candles svg:nth-child(6) {
     padding: 0 5em 0 5em;
   }
   main section .section-text {
-    width: 45em !important;
+    min-width: 45em !important;
+    max-width: 55em;
   }
 }
 /*# sourceMappingURL=sadnessStyle.css.map */
