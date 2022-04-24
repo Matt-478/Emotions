@@ -112,3 +112,26 @@ body
     
   &:hover
     background-color: rgba(222,222, 222, 0.4)
+
+  
+
+// extra-large screens
+@media screen and ( min-width: 1201px)
+  main section 
+    padding: 0 5em 0 5em
+    // &:first-child
+    //   font-size: 
+    .section-text
+      min-width: 45em !important
+      max-width: 55em
+
+// large screens
+  // READ BEFORE CONTINUING!  
+  // for whatever reqason the media query for large screen is working but not for regular large - figure that out
+@media screen and (min-width: 1025px)
+  main section
+    width: fit-content
+    padding: 0 5em 0 5em
+    .section-text
+    min-width: 35em 
+    max-width: 45em

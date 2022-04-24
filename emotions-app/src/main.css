@@ -118,4 +118,25 @@ body main .emotionTitle {
 .demo_btn:hover {
   background-color: rgba(222, 222, 222, 0.4);
 }
+
+@media screen and (min-width: 1201px) {
+  main section {
+    padding: 0 5em 0 5em;
+  }
+  main section .section-text {
+    min-width: 45em !important;
+    max-width: 55em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main section {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 5em 0 5em;
+    min-width: 35em;
+    max-width: 45em;
+  }
+}
 /*# sourceMappingURL=main.css.map */
