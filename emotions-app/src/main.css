@@ -82,15 +82,6 @@ body main {
 body main section {
   height: 100vh;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   scroll-snap-align: start;
 }
 
@@ -131,8 +122,12 @@ body main .emotionTitle {
 
 @media screen and (min-width: 1025px) {
   main section {
-    width: 50vw;
-    padding: 0 5em 0 5em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 3em;
+  }
+  main section .section-text {
     min-width: 35em;
     max-width: 45em;
   }
