@@ -127,13 +127,24 @@ body
       max-width: 55em
 
 // large screens
-@media screen and (min-width: 1025px)
+@media screen and (min-width: 1025px) and (max-width: 1200px)
   main section
     width: fit-content
     padding: 0 3em
     .section-text
       min-width: 35em 
       max-width: 45em
+
+// medium screens
+@media screen and (min-width: 769px) and ( max-width: 1024px )
+  main section
+    padding-left: 4em
+    padding-right: 4em
+    .section-text
+      font-size: 1.4em 
+      min-width: 28em
+      max-width: 40em
+    
 
 // NEXT: 
 //  * add media q's for medium size
