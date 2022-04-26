@@ -122,10 +122,6 @@ export default function SadnessSection({ fromIfStatement }) {
               {sadObj.title}
             </h1>
             <p
-              style={{
-                width: "30em",
-                position: "absolute",
-                top: "8em"}}
               className="section-text">
               {sadObj.emotionProps.text_description}
             </p>

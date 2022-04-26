@@ -115,12 +115,12 @@ body main .emotionTitle {
     padding: 0 5em 0 5em;
   }
   main section .section-text {
-    min-width: 45em !important;
+    width: 40em;
     max-width: 55em;
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) {
   main section {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -128,7 +128,7 @@ body main .emotionTitle {
     padding: 0 3em;
   }
   main section .section-text {
-    min-width: 35em;
+    width: 35em;
     max-width: 45em;
   }
 }
