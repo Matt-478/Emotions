@@ -89,7 +89,6 @@ body main section .section-text {
   position: absolute;
   top: 8em;
   left: 2em;
-  width: 20em;
 }
 
 body main section .section-text .allFontsProps {
@@ -155,6 +154,7 @@ body main .emotionTitle {
     font-size: 1.4em;
     min-width: 28em;
     max-width: 40em;
+    margin-right: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
