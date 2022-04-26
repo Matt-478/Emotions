@@ -85,6 +85,17 @@ body main section {
   scroll-snap-align: start;
 }
 
+body main section .section-text {
+  position: absolute;
+  top: 8em;
+}
+
+body main section .section-text .allFontsProps {
+  font-size: 8em;
+  cursor: default;
+  position: absolute;
+}
+
 body main .emotionTitle {
   position: absolute;
   top: 0.5em;
