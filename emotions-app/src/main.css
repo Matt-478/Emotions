@@ -140,8 +140,9 @@ body main .emotionTitle {
     padding: 0 3em;
   }
   main section .section-text {
-    width: 35em;
+    min-width: 35em;
     max-width: 45em;
+    margin-right: 2em;
   }
 }
 
