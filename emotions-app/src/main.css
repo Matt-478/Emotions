@@ -158,4 +158,16 @@ body main .emotionTitle {
     margin-right: 2em;
   }
 }
+
+@media screen and (min-width: 461px) {
+  main section .emotionTitle {
+    font-size: 10em;
+    position: absolute;
+    left: 0.5em;
+    top: 0.7em;
+  }
+  main section .section-text {
+    font-size: 2.3em;
+  }
+}
 /*# sourceMappingURL=main.css.map */
