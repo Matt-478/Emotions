@@ -1,5 +1,5 @@
 import './main.css'
-import './styling/mediaQueries'
+import './styling/mediaQueries.css'
 import React, { useEffect, useState } from 'react'
 
 import { data } from './data'
