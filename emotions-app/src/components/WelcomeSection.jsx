@@ -2,7 +2,7 @@ import React from 'react'
 import { data } from '../data'
 import '../styling/welcomeStyle.css'
 
-export default function EnjoymentSection ({ demoToggle }) {
+export default function EnjoymentSection () {
 
   let welcomeObj = data.find((obj) => {
     if(obj.title === "Welcome") {
