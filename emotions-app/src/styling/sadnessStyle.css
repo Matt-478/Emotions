@@ -500,17 +500,4 @@ section .centered-candles svg:nth-child(6) {
             transform: translateY(120px);
   }
 }
-
-@media screen and (max-width: 480px) {
-  main section {
-    height: 100vh;
-    width: auto;
-  }
-  main section .section-text {
-    max-width: 70vw;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
 /*# sourceMappingURL=sadnessStyle.css.map */
