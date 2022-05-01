@@ -60,6 +60,9 @@
   main section .emotionTitle {
     font-size: 2.8em;
   }
+  #Welcome h1  {
+    font-size: 5em !important;
+  }
 
   main section .section-text {
     font-size: 1.2em;
