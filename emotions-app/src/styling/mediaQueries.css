@@ -53,6 +53,21 @@
     left: unset !important;
     margin: 1em;
   }
+
+  /* !!!!these commented areas are for solving responsiveness for animation */
+  /* main #Sadness .centered-candles  {
+    max-width: 300px;
+  } */
+
+  /* .centered-candles {
+    width: 300px;
+    background-color: rgb(177, 135, 59) !important;
+  } */
+
+
+  /* main #Sadness div:nth-child(4), main #Sadness div:nth-child(5) {
+    display: none;
+  } */
 }
 
 /* small screens - phone area */
