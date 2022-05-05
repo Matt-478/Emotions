@@ -50,21 +50,6 @@
     left: unset !important;
     margin: 1em;
   }
-
-  /* !!!!these commented areas are for solving responsiveness for animation */
-  /* main #Sadness .centered-candles  {
-    max-width: 300px;
-  } */
-
-  /* .centered-candles {
-    width: 300px;
-    background-color: rgb(177, 135, 59) !important;
-  } */
-
-/* remove 2 candles so they fit */
-  /* main #Sadness div:nth-child(4), main #Sadness div:nth-child(5) {
-    display: none;
-  } */
 }
 
 /* small screens - phone area */
@@ -82,6 +67,32 @@
     top: 4em !important;
     left: unset !important;
     margin: 1em;
+  }
+}
+
+/* tablet & phone screens - less candles */
+@media screen and (min-width: 400px) and  (max-width: 600px) {
+  main section#Sadness .centered-candles  {
+    width: 400px;
+  }
+  /* remove 2 candles so the animation fits */ 
+  main section#Sadness .centered-candles svg:nth-child(4),
+  main section#Sadness .centered-candles svg:nth-child(5){
+    display: none;
+  }
+
+}
+
+/* tiny screens */
+@media screen and (max-width: 399px) {
+  main section#Sadness .centered-candles svg:nth-child(2),
+  main section#Sadness .centered-candles svg:nth-child(3),
+  main section#Sadness .centered-candles svg:nth-child(4),
+  main section#Sadness .centered-candles svg:nth-child(5){
+    display: none;
+  }
+  main section#Sadness .centered-candles {
+    width: 160px;
   }
 }
 
