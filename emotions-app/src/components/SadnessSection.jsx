@@ -107,6 +107,13 @@ export default function SadnessSection({ fromIfStatement }) {
           </svg> */}
 
           </div>
+          <DemoBtn
+             toggleValue={sadness}
+             setToggleValue={setSadness}
+             style={{
+              position: "absolute",
+              right: "0",
+              bottom: "5em"}}/>
         </section>
         </>
         ) : (
