@@ -7,6 +7,9 @@
     width: 40em;
     max-width: 55em;
   }
+  main section#Welcome h1 {
+    font-size: 14em;
+  }
 }
 
 /* // x-large screens */
@@ -22,6 +25,9 @@
     max-width: 45em;
     margin-right: 2em;
   }
+  main section#Welcome h1 {
+    font-size: 10em;
+  }
 }
 
 /* // large screens */
@@ -36,6 +42,9 @@
     max-width: 40em;
     margin-right: 2em;
   }
+  main section#Welcome h1 {
+    font-size: 11em;
+  }
 }
 
 /* medium screens - tablet area */
@@ -49,6 +58,9 @@
     top: 4em !important;
     left: unset !important;
     margin: 1em;
+  }
+  main section#Welcome h1 {
+    font-size: 8em;
   }
 }
 
